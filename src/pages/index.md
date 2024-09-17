@@ -66,3 +66,6 @@ sidebar_position: 1
 
 ### Теория
 Хвастунов Александр Павлович
+
+#### Есть что добавить/исправить? Внесите изменения в Markdown по ссылке ниже!
+**[Редактировать страницу](https://github.com/nawinds/m3104-links/edit/master/src/pages/index.md)**
