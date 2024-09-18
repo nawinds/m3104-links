@@ -151,7 +151,7 @@ const config = {
           {
             tagName: 'link',
             rel: 'icon',
-            href: '/img/docusaurus.png',
+            href: '/img/android-chrome-512x512.png',
           },
           {
             tagName: 'link',
@@ -161,7 +161,7 @@ const config = {
           {
             tagName: 'meta',
             name: 'theme-color',
-            content: 'rgb(37, 194, 160)',
+            content: 'rgb(255, 255, 255)',
           },
         ],
       },
