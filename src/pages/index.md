@@ -58,7 +58,8 @@ sidebar_position: 1
 
 
 ## Основы программирования
-- [Telegram: ITMO C++ 24/25](https://t.me/+P7FY7vt4qCM3NTZi)
+- [Telegram: ITMO C++ 24/25 News (новостной канал)](https://t.me/+TrkaJQNAvmVkYjk6)
+- [Telegram: ITMO C++ 24/25 (обсуждение)](https://t.me/+P7FY7vt4qCM3NTZi)
 - [GitHub: Лекции](https://github.com/is-itmo-c-24/lectures)
 
 ### Практика
