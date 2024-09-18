@@ -68,11 +68,6 @@ sidebar_position: 1
 ### Теория
 Хвастунов Александр Павлович
 
----
-
-#### Есть что добавить/исправить? Внесите изменения в Markdown по ссылке ниже!
-**[Редактировать страницу](https://github.com/nawinds/m3104-links/edit/master/src/pages/index.md)**
-
 
 ## Инструментальные средства разработки ПО
 
@@ -83,6 +78,8 @@ sidebar_position: 1
 Койнов Руслан Васильевич
 
 - [Google Drive: Лекции](https://drive.google.com/drive/folders/12_9Lt4PuEG9qQC2-KN4fQcM9zvxHSH4b)
+
+---
 
 #### Есть что добавить/исправить? Внесите изменения в Markdown по ссылке ниже!
 **[Редактировать страницу](https://github.com/nawinds/m3104-links/edit/master/src/pages/index.md)**
