@@ -67,5 +67,16 @@ sidebar_position: 1
 ### Теория
 Хвастунов Александр Павлович
 
+
+## Инструментальные средства разработки ПО
+
+## Практика
+Кулешова Екатерина Дмитриевна
+
+## Теория
+Койнов Руслан Васильевич
+
+- [Google Drive: Лекции](https://drive.google.com/drive/folders/12_9Lt4PuEG9qQC2-KN4fQcM9zvxHSH4b)
+
 #### Есть что добавить/исправить? Внесите изменения в Markdown по ссылке ниже!
 **[Редактировать страницу](https://github.com/nawinds/m3104-links/edit/master/src/pages/index.md)**
