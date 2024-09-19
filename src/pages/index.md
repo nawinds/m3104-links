@@ -4,6 +4,11 @@ sidebar_position: 1
 
 # Полезные ссылки
 
+## Актуальное
+
+
+[Discord: Семинар по C++](https://discord.gg/QhuennRzkK) (см. [сообщение](https://t.me/c/2405701816/6))
+
 ## МатАн и ЛинАл
 
 
@@ -41,7 +46,7 @@ sidebar_position: 1
        - [CheatSheet](https://drive.google.com/file/d/1kCIq7WjW2ta7ug2BvSKw1kIZ4aAMY-x4/view)
        - [Version 2](https://drive.google.com/file/d/1snw1Kfn6XGCbLADq2O4UgXKjby3qQIFj/view)
        - [Version 1](https://drive.google.com/file/d/1-3Jif5RZ1MGExOLCIVkbf1YMiua9iEtH/view)
-       - [Загрузить на Dropbox](https://www.dropbox.com/request/QMw0STPuOJU5zH9NKNUL) (PDF &lt; 10 MB !!!)
+       - Решения загружать по ссылке из [сообщения](https://discord.com/channels/1279787292034076817/1279793137207869494/1284955025256353844). (PDF &lt; 10 MB !!!)
 
 ## Алгоритмы
 - Discord: ДМ+Алго
@@ -61,6 +66,7 @@ sidebar_position: 1
 - [Telegram: ITMO C++ 24/25 News (новостной канал)](https://t.me/+TrkaJQNAvmVkYjk6)
 - [Telegram: ITMO C++ 24/25 (обсуждение)](https://t.me/+P7FY7vt4qCM3NTZi)
 - [GitHub: Лекции](https://github.com/is-itmo-c-24/lectures)
+- [Discord: awesome-cpp](https://discord.gg/QhuennRzkK)
 
 ### Практика
 Курилов Федор Константинович
