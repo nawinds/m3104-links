@@ -44,6 +44,7 @@ sidebar_position: 1
   - Домашние задания:
     - [1. Теория множеств](https://drive.google.com/drive/folders/1kO-N_k2WBsFADQxxYBKJ2X9TcUmMMaGT)
        - [CheatSheet](https://drive.google.com/file/d/1kCIq7WjW2ta7ug2BvSKw1kIZ4aAMY-x4/view)
+       - [Version 3](https://drive.google.com/file/d/1Don-W2gMf3WzBZ2lfJabY9OHccbi3B6y/view)
        - [Version 2](https://drive.google.com/file/d/1snw1Kfn6XGCbLADq2O4UgXKjby3qQIFj/view)
        - [Version 1](https://drive.google.com/file/d/1-3Jif5RZ1MGExOLCIVkbf1YMiua9iEtH/view)
        - Решения загружать по ссылке из [сообщения](https://discord.com/channels/1279787292034076817/1279793137207869494/1284955025256353844). (PDF &lt; 10 MB !!!)
