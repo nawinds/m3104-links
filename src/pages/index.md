@@ -7,7 +7,7 @@ sidebar_position: 1
 ## Актуальное
 
 
-[Discord: Семинар по C++](https://discord.gg/QhuennRzkK) (см. [сообщение](https://t.me/c/2405701816/6))
+[Запись семинара по C++](https://drive.google.com/file/d/1AyHJQmffsv1Nv31oR0OtqPvcu3KmyFtI/view?usp=drivesdk)
 
 ## МатАн и ЛинАл
 
