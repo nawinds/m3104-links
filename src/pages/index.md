@@ -7,6 +7,8 @@ sidebar_position: 1
 ## Актуальное
 
 
+Во вторник матан начнётся в 10:00 (вместе с M3103)!
+
 [Запись семинара по C++](https://drive.google.com/file/d/1AyHJQmffsv1Nv31oR0OtqPvcu3KmyFtI/view?usp=drivesdk)
 
 ## МатАн и ЛинАл
@@ -37,7 +39,7 @@ sidebar_position: 1
 
 ### Теория
 Чухарев Константин Игоревич
-- Discord: ДМ+Алго
+- [Discord: ДМ+Алго](https://discord.com/channels/1279787292034076817/1279793137207869494)
 - [Папка Google Drive](https://drive.google.com/drive/folders/1ReeYK89xcJf7cO9Vg9pOifGVoxdJPzMd)
   - [Памятка](https://docs.google.com/document/d/14rxNIPiW9FW3BuyEtAu947BJZ0UkJFu6WAr0zULDbmA/edit#heading=h.j75x0g10s2dp)
   - [Литература](https://drive.google.com/drive/folders/1W63cvUPTaqqHQWqAnkdz1mVHGnfQyNjC)
@@ -50,10 +52,10 @@ sidebar_position: 1
        - Решения загружать по ссылке из [сообщения](https://discord.com/channels/1279787292034076817/1279793137207869494/1284955025256353844). (PDF &lt; 10 MB !!!)
 
 ## Алгоритмы
-- Discord: ДМ+Алго
+- [Discord: ДМ+Алго](https://discord.com/channels/1279787292034076817/1279793168639856660)
 
 ### Практика
-Усатов Никита, _ментор: Игорь Толстокулаков_
+Усатов Никита, _ментор: Толстокулаков Игорь_
 - [Telegram: algo 02,04](tg://privatepost?channel=2245578546&single)
 - [Таблица с баллами](https://docs.google.com/spreadsheets/d/1DwOhN0JpuUK3i0Zg4rag6J_vBQYGrzjdNWJ20UCTuI8/edit?usp=sharing)
 - Лабораторные:
@@ -66,8 +68,6 @@ sidebar_position: 1
 ## Основы программирования
 - [Telegram: ITMO C++ 24/25 News (новостной канал)](https://t.me/+TrkaJQNAvmVkYjk6)
 - [Telegram: ITMO C++ 24/25 (обсуждение)](https://t.me/+P7FY7vt4qCM3NTZi)
-- [GitHub: Лекции](https://github.com/is-itmo-c-24/lectures)
-- [Discord: awesome-cpp](https://discord.gg/QhuennRzkK)
 
 ### Практика
 Курилов Федор Константинович
@@ -75,6 +75,8 @@ sidebar_position: 1
 ### Теория
 Хвастунов Александр Павлович
 
+- [GitHub: Лекции](https://github.com/is-itmo-c-24/lectures)
+- [Discord: awesome-cpp](https://discord.gg/QhuennRzkK)
 
 ## Инструментальные средства разработки ПО
 
