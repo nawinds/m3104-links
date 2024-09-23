@@ -6,16 +6,14 @@ sidebar_position: 1
 
 ## Актуальное
 
-
 Во вторник матан начнётся в 10:00 (вместе с M3103)!
 
 [Запись семинара по C++](https://drive.google.com/file/d/1AyHJQmffsv1Nv31oR0OtqPvcu3KmyFtI/view?usp=drivesdk)
 
+
 ## МатАн и ЛинАл
 
-
-### Практика
-Сарычев Павел Александрович
+Далевская Ольга Петровна, Сарычев Павел Александрович
 
 - [Telegram: ФИТИП 3103 3104](tg://privatepost?channel=2194579892&single)
 - [Матан](https://buildin.ai/share/e9b5fad6-6831-4067-b469-f79e5cf78d40)
@@ -27,18 +25,12 @@ sidebar_position: 1
   - [Зачетные работы](https://buildin.ai/share/ff37bd3f-3252-4418-bd57-990d5224151e#738b571a-1306-4407-a919-1d379b2452d8)
   - [Литература](https://buildin.ai/share/d6bfee45-8008-4000-918a-ec76a155e0bc)
 
-### Теория
-Далевская Ольга Петровна
-
 
 ## Дискретная математика
 
-### Практика
-Тема (Сомов Артем Владимирович)
-- [Telegram: Дискретные покемоны y28](tg://privatepost?channel=2179126405&single&thread=1)
+Чухарев Константин Игоревич, Тема (Сомов Артем Владимирович)
 
-### Теория
-Чухарев Константин Игоревич
+- [Telegram: Дискретные покемоны y28](tg://privatepost?channel=2179126405&single&thread=1)
 - [Discord: ДМ+Алго](https://discord.com/channels/1279787292034076817/1279793137207869494)
 - [Папка Google Drive](https://drive.google.com/drive/folders/1ReeYK89xcJf7cO9Vg9pOifGVoxdJPzMd)
   - [Памятка](https://docs.google.com/document/d/14rxNIPiW9FW3BuyEtAu947BJZ0UkJFu6WAr0zULDbmA/edit#heading=h.j75x0g10s2dp)
@@ -51,40 +43,33 @@ sidebar_position: 1
        - [Version 1](https://drive.google.com/file/d/1-3Jif5RZ1MGExOLCIVkbf1YMiua9iEtH/view)
        - Решения загружать по ссылке из [сообщения](https://discord.com/channels/1279787292034076817/1279793137207869494/1284955025256353844). (PDF &lt; 10 MB !!!)
 
-## Алгоритмы
-- [Discord: ДМ+Алго](https://discord.com/channels/1279787292034076817/1279793168639856660)
 
-### Практика
-Усатов Никита, _ментор: Толстокулаков Игорь_
+## Алгоритмы
+
+Ткаченко Данил Михайлович, Усатов Никита, _ментор: Толстокулаков Игорь_
+
 - [Telegram: algo 02,04](tg://privatepost?channel=2245578546&single)
+- [Discord: ДМ+Алго](https://discord.com/channels/1279787292034076817/1279793168639856660)
 - [Таблица с баллами](https://docs.google.com/spreadsheets/d/1DwOhN0JpuUK3i0Zg4rag6J_vBQYGrzjdNWJ20UCTuI8/edit?usp=sharing)
 - Лабораторные:
   - [Лабораторная №1](https://sort-me.org/contest/246?code=2kQZnaLwvts3npoqutjw)
 
-### Теория
-Ткаченко Данил Михайлович
-
 
 ## Основы программирования
+
+Хвастунов Александр Павлович, Курилов Федор Константинович
+
 - [Telegram: ITMO C++ 24/25 News (новостной канал)](https://t.me/+TrkaJQNAvmVkYjk6)
 - [Telegram: ITMO C++ 24/25 (обсуждение)](https://t.me/+P7FY7vt4qCM3NTZi)
-
-### Практика
-Курилов Федор Константинович
-
-### Теория
-Хвастунов Александр Павлович
-
 - [GitHub: Лекции](https://github.com/is-itmo-c-24/lectures)
 - [Discord: awesome-cpp](https://discord.gg/QhuennRzkK)
+- Лабораторные работы:
+  - [1. LogAnalyzer](https://classroom.github.com/a/Xcf9cHNQ)
+- [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
 
 ## Инструментальные средства разработки ПО
 
-### Практика
-Кулешова Екатерина Дмитриевна
-
-### Теория
-Койнов Руслан Васильевич
+Койнов Руслан Васильевич, Кулешова Екатерина Дмитриевна
 
 - [Google Drive: Лекции](https://drive.google.com/drive/folders/12_9Lt4PuEG9qQC2-KN4fQcM9zvxHSH4b)
 
