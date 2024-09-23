@@ -80,10 +80,10 @@ sidebar_position: 1
 
 ## Инструментальные средства разработки ПО
 
-## Практика
+### Практика
 Кулешова Екатерина Дмитриевна
 
-## Теория
+### Теория
 Койнов Руслан Васильевич
 
 - [Google Drive: Лекции](https://drive.google.com/drive/folders/12_9Lt4PuEG9qQC2-KN4fQcM9zvxHSH4b)
