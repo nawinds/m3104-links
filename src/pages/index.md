@@ -72,6 +72,9 @@ sidebar_position: 1
 Койнов Руслан Васильевич, Кулешова Екатерина Дмитриевна
 
 - [Google Drive: Лекции](https://drive.google.com/drive/folders/12_9Lt4PuEG9qQC2-KN4fQcM9zvxHSH4b)
+- [Google Drive: Лабы](https://drive.google.com/drive/folders/1-w_oFB5Zcl-1n1lDnSHj31urYuiCs_qi?usp=sharing)
+- [Telegram: ИСРПО 04-09 2024-2025](https://t.me/+8Zg53RtBRFkxZDcy)
+- [Git на русском](https://git-scm.com/book/ru/v2)
 
 ---
 
