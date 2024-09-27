@@ -4,11 +4,10 @@ sidebar_position: 1
 
 # Полезные ссылки
 
+
 ## Актуальное
 
-Во вторник матан начнётся в 10:00 (вместе с M3103)!
-
-[Запись семинара по C++](https://drive.google.com/file/d/1AyHJQmffsv1Nv31oR0OtqPvcu3KmyFtI/view?usp=drivesdk)
+Во вторник матан начинается в 10:00 (вместе с M3103)!
 
 
 ## МатАн и ЛинАл
@@ -61,11 +60,16 @@ sidebar_position: 1
 
 - [Telegram: ITMO C++ 24/25 News (новостной канал)](https://t.me/+TrkaJQNAvmVkYjk6)
 - [Telegram: ITMO C++ 24/25 (обсуждение)](https://t.me/+P7FY7vt4qCM3NTZi)
-- [GitHub: Лекции](https://github.com/is-itmo-c-24/lectures)
 - [Discord: awesome-cpp](https://discord.gg/QhuennRzkK)
+- [Таблица с баллами осеннего семестра](https://docs.google.com/spreadsheets/d/1H6KX7RjUtoFQQmObNk2b9i2EnXfLiF8H8YGTdTYuL0s/edit?gid=122899038#gid=122899038)
+- [GitHub: Лекции](https://github.com/is-itmo-c-24/lectures)
+- Семинары:
+  - [1. Cmake, парсинг аргументов, создание утилиты для копирования файла](https://drive.google.com/file/d/1AyHJQmffsv1Nv31oR0OtqPvcu3KmyFtI/view?usp=drivesdk) (Запись)
+  - 2. Указатели 
 - Лабораторные работы:
   - [1. LogAnalyzer](https://classroom.github.com/a/Xcf9cHNQ)
 - [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
+
 
 ## Инструментальные средства разработки ПО
 
@@ -73,7 +77,21 @@ sidebar_position: 1
 
 - [Google Drive: Лекции](https://drive.google.com/drive/folders/12_9Lt4PuEG9qQC2-KN4fQcM9zvxHSH4b)
 - [Google Drive: Лабы](https://drive.google.com/drive/folders/1-w_oFB5Zcl-1n1lDnSHj31urYuiCs_qi?usp=sharing)
+  - [1. Лабораторная работа по Git](https://docs.google.com/document/d/1dsZJhU1TtohSQd1Mxv8o1J_lckRuXEKKi2_5RTH06u4/edit#heading=h.k13u79colfxm)
+    - [Сообщение с пояснениями](https://t.me/c/2292794278/31)
+  - [2. Документирование](https://docs.google.com/document/d/1xwJQ3kw7d3SAjqKVIE9uW4OoAe1rO7hOd578TkaE_vE/edit#heading=h.4md9wg3muug)
+    - [Сообщение с пояснениями](https://t.me/c/2292794278/218)
+  - [3. Создание плагина](https://docs.google.com/document/d/15uhU-jkBk406fuyP6Davp6fr9C3tvtlXhr5A1TA5OJ8/edit#heading=h.4md9wg3muug)
+    - [Сообщение с пояснениями](https://t.me/c/2292794278/221)
+  - [3-1. Работа с плагинами](https://docs.google.com/document/d/121nIK959HYYyfPWLeaCothnsp45t7gvP0pb7UvSMi_8/edit#heading=h.4md9wg3muug)
+  - [4. Написание Unit тестов](https://docs.google.com/document/d/1FTIUanKPLE66ywges_Zf8kvCLtbz9-GGN_uUrUX-Ank/edit#heading=h.4md9wg3muug)
+    - [Сообщение с пояснениями](https://t.me/c/2292794278/225)
+  - [5. Знакомство с CI/CD](https://docs.google.com/document/d/1voQ2xULqvHVRg7QJL0nfRipAPGAlzFT2grsI8fiq5n0/edit#heading=h.4md9wg3muug)
 - [Telegram: ИСРПО 04-09 2024-2025](https://t.me/+8Zg53RtBRFkxZDcy)
+- [Шаблон лабы с титульником](https://docs.google.com/document/d/1dvg_Dw93UD3sUGniO9tktjtpFECtK4h9/edit?usp=sharing&ouid=114596029915826403525&rtpof=true&sd=true)
+- [Форма для загрузки отчетов](https://forms.gle/P1SgH6CWJuGqDyncA)
+
+#### Полезное
 - [Git на русском](https://git-scm.com/book/ru/v2)
 
 ---
