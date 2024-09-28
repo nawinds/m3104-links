@@ -41,6 +41,8 @@ sidebar_position: 1
        - [Version 2](https://drive.google.com/file/d/1snw1Kfn6XGCbLADq2O4UgXKjby3qQIFj/view)
        - [Version 1](https://drive.google.com/file/d/1-3Jif5RZ1MGExOLCIVkbf1YMiua9iEtH/view)
        - Решения загружать по ссылке из [сообщения](https://discord.com/channels/1279787292034076817/1279793137207869494/1284955025256353844). (PDF &lt; 10 MB !!!)
+  - [Материалы](https://dm-aisd.yonote.ru/share/itmo_dm_aisd):
+    - [Лекции](https://dm-aisd.yonote.ru/share/dm_lections)
 
 
 ## Алгоритмы
@@ -50,6 +52,8 @@ sidebar_position: 1
 - [Telegram: algo 02,04](tg://privatepost?channel=2245578546&single)
 - [Discord: ДМ+Алго](https://discord.com/channels/1279787292034076817/1279793168639856660)
 - [Таблица с баллами](https://docs.google.com/spreadsheets/d/1DwOhN0JpuUK3i0Zg4rag6J_vBQYGrzjdNWJ20UCTuI8/edit?usp=sharing)
+- [Материалы](https://dm-aisd.yonote.ru/share/itmo_dm_aisd):
+  - [Лекции](https://dm-aisd.yonote.ru/share/itmo_aisd_lections)
 - Лабораторные:
   - [Лабораторная №1](https://sort-me.org/contest/246?code=2kQZnaLwvts3npoqutjw)
 
