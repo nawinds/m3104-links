@@ -50,7 +50,7 @@ sidebar_position: 1
 - [Telegram: algo 02,04](tg://privatepost?channel=2245578546&single)
 - [Discord: ДМ+Алго](https://discord.com/channels/1279787292034076817/1279793168639856660)
 - [Таблица с баллами](https://docs.google.com/spreadsheets/d/1DwOhN0JpuUK3i0Zg4rag6J_vBQYGrzjdNWJ20UCTuI8/edit?usp=sharing)
-- [Материалы](https://dm-aisd.yonote.ru/share/itmo_dm_aisd):
+- [Материалы](https://dm-aisd.yonote.ru/share/itmo_dm_aisd)
   - [Лекции](https://dm-aisd.yonote.ru/share/itmo_aisd_lections)
   - [Литература](https://dm-aisd.yonote.ru/share/itmo_aisd_books)
 - Лабораторные:
