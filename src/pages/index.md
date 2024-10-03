@@ -64,7 +64,7 @@ sidebar_position: 1
 - [Telegram: ITMO C++ 24/25 News (новостной канал)](https://t.me/+TrkaJQNAvmVkYjk6)
 - [Telegram: ITMO C++ 24/25 (обсуждение)](https://t.me/+P7FY7vt4qCM3NTZi)
 - [Discord: awesome-cpp](https://discord.gg/QhuennRzkK)
-- [Таблица с баллами осеннего семестра](https://docs.google.com/spreadsheets/d/1H6KX7RjUtoFQQmObNk2b9i2EnXfLiF8H8YGTdTYuL0s/edit?gid=122899038#gid=122899038)
+- [Таблица с баллами осеннего семестра](https://docs.google.com/spreadsheets/d/1H6KX7RjUtoFQQmObNk2b9i2EnXfLiF8H8YGTdTYuL0s/edit?gid=1481585521#gid=1481585521)
 - [GitHub: Лекции](https://github.com/is-itmo-c-24/lectures)
 - Семинары:
   - [1. Cmake, парсинг аргументов, создание утилиты для копирования файла](https://drive.google.com/file/d/1AyHJQmffsv1Nv31oR0OtqPvcu3KmyFtI/view?usp=drivesdk) (Запись)
