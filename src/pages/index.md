@@ -16,7 +16,7 @@ sidebar_position: 1
 
 - [Telegram: ФИТИП 3103 3104](tg://privatepost?channel=2194579892&single)
 - [Матан](https://buildin.ai/share/e9b5fad6-6831-4067-b469-f79e5cf78d40)
-  - [Учебный план на семестр](https://buildin.ai/share/e9b5fad6-6831-4067-b469-f79e5cf78d40#c804f48e-651a-482c-9a4c-6935d1829209)
+  - [Учебный план на семестр](https://buildin.ai/share/a3bb946a-335d-4ab7-b2bc-12941ed9d4e2#6154dca0-59e2-4981-a98f-2ec8d0767ac1)
   - [Зачетные работы](https://buildin.ai/share/7c3aea7d-388a-4bf7-8f65-8b4265f30bf2#c804f48e-651a-482c-9a4c-6935d1829209)
   - [Литература](https://buildin.ai/share/77c6114d-fdfa-47e2-b652-0624e0d16897)
 - [Линал](https://buildin.ai/share/e9b5fad6-6831-4067-b469-f79e5cf78d40)
