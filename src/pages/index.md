@@ -72,6 +72,7 @@ sidebar_position: 1
 - Лабораторные работы:
   - [1. LogAnalyzer](https://classroom.github.com/a/Xcf9cHNQ)
 - [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
+- [Снижение балла при сдаче после 0 дедлайна](https://m3104.nawinds.dev/deadlines/#%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)
 
 
 ## Инструментальные средства разработки ПО
