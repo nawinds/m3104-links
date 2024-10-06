@@ -138,6 +138,7 @@ const config = {
                 darkTheme: prismThemes.dracula,
             },
         }),
+    clientModules: ['./ya_metrika.js'],
     plugins: [
         [
             '@docusaurus/plugin-pwa',
