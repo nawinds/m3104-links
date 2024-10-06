@@ -9,6 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: 'M3104',
+    noIndex: true,
     favicon: 'img/favicon.ico',
 
     // Set the production url of your site here
@@ -169,7 +170,7 @@ const config = {
         [
             '@docusaurus/plugin-google-gtag',
             {
-                trackingID: 'GTM-MVKLVPP2',
+                trackingID: 'G-31L3HQGM6Q',
                 anonymizeIP: false,
             },
         ],
