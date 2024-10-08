@@ -28,7 +28,7 @@ function Get(yourUrl) {
     return Httpreq.responseText;
 }
 
-function CompareDeadlines (a, b) {
+function CompareDeadlines(a, b) {
     const aTime = Date.parse(a.time);
     const bTime = Date.parse(b.time);
 
@@ -72,32 +72,35 @@ function PrintDeadline(d) {
     text += "<br>";
 }
 
-waitForElement('deadlines-placeholder', 5000)
-    .then(element => {
-        let deadlinesElement = document.getElementById("deadlines-placeholder");
 
-        let deadlinesElement2 = document.createElement('div');
-        deadlinesElement2.id = "deadlines-element";
-        deadlinesElement2.style = "background-color: rgb(0, 191, 255, 0.15); padding: 20px; " +
-            "border-radius: 15px; margin-bottom: 10px;";
-        let deadlinesElement2h2 = document.createElement('h2');
-        deadlinesElement2h2.innerHTML = deadlinesElement.innerHTML.replace("deadlines-placeholder",
-            "Дедлайны");
-        deadlinesElement2.appendChild(deadlinesElement2h2);
-        deadlinesElement.parentNode.replaceChild(deadlinesElement2, deadlinesElement);
+window.onload = () => {
+    console.log('Page is fully loaded, including React');
+    waitForElement('дедлайны', 5000)
+        .then(element => {
+            let deadlinesElement = document.getElementById("дедлайны");
 
-        let deadlinesP = document.createElement("p");
+            let deadlinesElement2 = document.createElement('div');
+            deadlinesElement2.id = "deadlines-element";
+            deadlinesElement2.style = "background-color: rgb(0, 191, 255, 0.15); padding: 20px; " +
+                "border-radius: 15px; margin-bottom: 10px;";
+            let deadlinesElement2h2 = document.createElement('h2');
+            deadlinesElement2h2.innerHTML = deadlinesElement.innerHTML;
+            deadlinesElement2.appendChild(deadlinesElement2h2);
+            deadlinesElement.parentNode.replaceChild(deadlinesElement2, deadlinesElement);
 
-        let json_obj = JSON.parse(Get(DEADLINES_URL));
-        let ordered = json_obj.deadlines;
-        ordered = ordered.sort(CompareDeadlines);
-        ordered.forEach(PrintDeadline);
+            let deadlinesP = document.createElement("p");
 
-        text += "<a href='https://github.com/nawinds/m3104-links/edit/master/static/deadlines.json' target='_blank'>" +
-            "Добавить дедлайн</a>"
-        deadlinesP.innerHTML = text;
-        deadlinesElement2.appendChild(deadlinesP);
-    })
-    .catch(error => {
-        console.error(error.message);
-    });
+            let json_obj = JSON.parse(Get(DEADLINES_URL));
+            let ordered = json_obj.deadlines;
+            ordered = ordered.sort(CompareDeadlines);
+            ordered.forEach(PrintDeadline);
+
+            text += "<a href='https://github.com/nawinds/m3104-links/edit/master/static/deadlines.json' target='_blank'>" +
+                "Добавить дедлайн</a>"
+            deadlinesP.innerHTML = text;
+            deadlinesElement2.appendChild(deadlinesP);
+        })
+        .catch(error => {
+            console.error(error.message);
+        });
+};

@@ -5,7 +5,7 @@ sidebar_position: 1
 # Полезные ссылки
 
 
-## deadlines-placeholder
+## Дедлайны
 
 
 ## Актуальное
