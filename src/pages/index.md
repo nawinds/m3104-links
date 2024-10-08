@@ -98,6 +98,12 @@ sidebar_position: 1
 #### Полезное
 - [Git на русском](https://git-scm.com/book/ru/v2)
 
+
+## Другое
+
+- [Капуста бот: очередь на сдачу](https://t.me/distributionM3104_Bot)
+- [Список группы](https://docs.google.com/spreadsheets/d/1qgzLDFRAlsFhHSkQEIVNwaQkZ-5t6V9yDrRmpBFVx6k/edit?usp=sharing)
+
 ---
 
 #### Есть что добавить/исправить? Внесите изменения в Markdown по ссылке ниже!
