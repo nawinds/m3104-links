@@ -1,4 +1,4 @@
-const DEADLINES_URL = "/deadlines.json";
+const DEADLINES_URL = "/api-deadlines";
 let text = "";
 
 
@@ -97,7 +97,7 @@ window.onload = () => {
                 ordered = ordered.sort(CompareDeadlines);
                 ordered.forEach(PrintDeadline);
 
-                text += "<a href='https://github.com/nawinds/m3104-links/edit/master/static/deadlines.json' target='_blank'>" +
+                text += "<a href='https://github.com/nawinds/m3104-links/edit/master/static/api-deadlines' target='_blank'>" +
                     "Добавить дедлайн</a>"
                 deadlinesP.innerHTML = text;
                 deadlinesElement2.appendChild(deadlinesP);
