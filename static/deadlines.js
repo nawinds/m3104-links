@@ -80,10 +80,11 @@ window.onload = () => {
             let deadlinesElement = document.getElementById("дедлайны");
 
             let deadlinesElement2 = document.createElement('div');
-            deadlinesElement2.id = "deadlines-element";
+
             deadlinesElement2.style = "background-color: rgb(0, 191, 255, 0.15); padding: 20px; " +
                 "border-radius: 15px; margin-bottom: 10px;";
             let deadlinesElement2h2 = document.createElement('h2');
+            deadlinesElement2h2.id = "дедлайны";
             deadlinesElement2h2.innerHTML = deadlinesElement.innerHTML;
             deadlinesElement2.appendChild(deadlinesElement2h2);
             deadlinesElement.parentNode.replaceChild(deadlinesElement2, deadlinesElement);
