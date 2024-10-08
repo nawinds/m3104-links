@@ -10,8 +10,8 @@ sidebar_position: 1
 
 ## Актуальное
 
-[C++ Лаба 2. ITMO Endian](https://classroom.github.com/a/JNsKdANK)
-[Лабораторная №2](https://sort-me.org/contest/247)
+- [C++ Лаба 2. ITMO Endian](https://classroom.github.com/a/JNsKdANK)
+- [Лаба по алгосам №2](https://sort-me.org/contest/247)
 
 
 ## МатАн и ЛинАл
