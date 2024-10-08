@@ -138,7 +138,7 @@ const config = {
                 darkTheme: prismThemes.dracula,
             },
         }),
-    scripts: ['/static/ya_metrika.js', '/static/deadlines.js'],
+    scripts: ['/ya_metrika.js', '/deadlines.js'],
     plugins: [
         [
             '@docusaurus/plugin-pwa',
