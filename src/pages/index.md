@@ -10,7 +10,8 @@ sidebar_position: 1
 
 ## Актуальное
 
-[Капуста бот: очередь на сдачу](https://t.me/distributionM3104_Bot)
+- [C++ Лаба 2. ITMO Endian](https://classroom.github.com/a/JNsKdANK)
+- [Лаба по алгосам №2](https://sort-me.org/contest/247)
 
 
 ## МатАн и ЛинАл
@@ -40,9 +41,9 @@ sidebar_position: 1
   - Домашние задания:
     - [1. Теория множеств](https://drive.google.com/drive/folders/1kO-N_k2WBsFADQxxYBKJ2X9TcUmMMaGT)
        - [CheatSheet](https://drive.google.com/file/d/1kCIq7WjW2ta7ug2BvSKw1kIZ4aAMY-x4/view)
-       - [Version 3](https://drive.google.com/file/d/1Don-W2gMf3WzBZ2lfJabY9OHccbi3B6y/view)
-       - [Version 2](https://drive.google.com/file/d/1snw1Kfn6XGCbLADq2O4UgXKjby3qQIFj/view)
        - [Version 1](https://drive.google.com/file/d/1-3Jif5RZ1MGExOLCIVkbf1YMiua9iEtH/view)
+       - [Version 2](https://drive.google.com/file/d/1snw1Kfn6XGCbLADq2O4UgXKjby3qQIFj/view)
+       - [Version 3](https://drive.google.com/file/d/1Don-W2gMf3WzBZ2lfJabY9OHccbi3B6y/view)
        - Решения загружать по ссылке из [сообщения](https://discord.com/channels/1279787292034076817/1279793137207869494/1284955025256353844). (PDF &lt; 10 MB !!!)
 
 
@@ -58,6 +59,7 @@ sidebar_position: 1
   - [Литература](https://dm-aisd.yonote.ru/share/itmo_aisd_books)
 - Лабораторные:
   - [Лабораторная №1](https://sort-me.org/contest/246?code=2kQZnaLwvts3npoqutjw)
+  - [Лабораторная №2](https://sort-me.org/contest/247)
 
 
 ## Основы программирования
@@ -74,6 +76,7 @@ sidebar_position: 1
   - 2. Указатели 
 - Лабораторные работы:
   - [1. LogAnalyzer](https://classroom.github.com/a/Xcf9cHNQ)
+  - [2. ITMO Endian](https://classroom.github.com/a/JNsKdANK)
 - [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
 - [Снижение балла при сдаче после 0 дедлайна](https://m3104.nawinds.dev/deadlines/#%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)
 
@@ -84,11 +87,11 @@ sidebar_position: 1
 
 - [Google Drive: Лекции](https://drive.google.com/drive/folders/12_9Lt4PuEG9qQC2-KN4fQcM9zvxHSH4b)
 - [Google Drive: Лабы](https://drive.google.com/drive/folders/1-w_oFB5Zcl-1n1lDnSHj31urYuiCs_qi?usp=sharing)
-  - [1. Лабораторная работа по Git](https://docs.google.com/document/d/1dsZJhU1TtohSQd1Mxv8o1J_lckRuXEKKi2_5RTH06u4/edit#heading=h.k13u79colfxm)
+  - [1. Лабораторная работа по Git](https://docs.google.com/document/d/1dsZJhU1TtohSQd1Mxv8o1J_lckRuXEKKi2_5RTH06u4/edit#heading=h.k13u79colfxm) (25.09)
     - [Сообщение с пояснениями](https://t.me/c/2292794278/31)
-  - [2. Документирование](https://docs.google.com/document/d/1xwJQ3kw7d3SAjqKVIE9uW4OoAe1rO7hOd578TkaE_vE/edit#heading=h.4md9wg3muug)
+  - [2. Документирование](https://docs.google.com/document/d/1xwJQ3kw7d3SAjqKVIE9uW4OoAe1rO7hOd578TkaE_vE/edit#heading=h.4md9wg3muug) (28.09)
     - [Сообщение с пояснениями](https://t.me/c/2292794278/218)
-  - [3. Создание плагина](https://docs.google.com/document/d/15uhU-jkBk406fuyP6Davp6fr9C3tvtlXhr5A1TA5OJ8/edit#heading=h.4md9wg3muug)
+  - [3. Создание плагина](https://docs.google.com/document/d/15uhU-jkBk406fuyP6Davp6fr9C3tvtlXhr5A1TA5OJ8/edit#heading=h.4md9wg3muug) (09.10)
     - [Сообщение с пояснениями](https://t.me/c/2292794278/221)
   - [3-1. Работа с плагинами](https://docs.google.com/document/d/121nIK959HYYyfPWLeaCothnsp45t7gvP0pb7UvSMi_8/edit#heading=h.4md9wg3muug)
   - [4. Написание Unit тестов](https://docs.google.com/document/d/1FTIUanKPLE66ywges_Zf8kvCLtbz9-GGN_uUrUX-Ank/edit#heading=h.4md9wg3muug)
