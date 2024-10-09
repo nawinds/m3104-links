@@ -100,7 +100,7 @@ sidebar_position: 1
 - [Telegram: ИСРПО 04-09 2024-2025](https://t.me/+8Zg53RtBRFkxZDcy)
 - [Шаблон лабы с титульником](https://docs.google.com/document/d/1dvg_Dw93UD3sUGniO9tktjtpFECtK4h9/edit?usp=sharing&ouid=114596029915826403525&rtpof=true&sd=true)
 - [Форма для загрузки отчетов](https://forms.gle/P1SgH6CWJuGqDyncA)
-- [Таблица с баллами](https://docs.google.com/spreadsheets/d/1YBK60x-2L0yD7gju4-BzX7ii0b4oQPBfIUOBx4Y-aXc/edit?usp=sharing)
+- [Таблица с баллами](https://docs.google.com/spreadsheets/d/1YBK60x-2L0yD7gju4-BzX7ii0b4oQPBfIUOBx4Y-aXc/edit?gid=1377017426#gid=1377017426)
 
 #### Полезное
 - [Git на русском](https://git-scm.com/book/ru/v2)
