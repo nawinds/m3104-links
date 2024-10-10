@@ -73,12 +73,13 @@ sidebar_position: 1
 - [GitHub: Лекции](https://github.com/is-itmo-c-24/lectures)
 - Семинары:
   - [1. Cmake, парсинг аргументов, создание утилиты для копирования файла](https://drive.google.com/file/d/1AyHJQmffsv1Nv31oR0OtqPvcu3KmyFtI/view?usp=drivesdk) (Запись)
-  - 2. Указатели 
+  - 2. Указатели
+  - [3. Работа с памятью](https://www.youtube.com/watch?v=n_8mNotAWi8) (Запись)
 - Лабораторные работы:
   - [1. LogAnalyzer](https://classroom.github.com/a/Xcf9cHNQ)
   - [2. ITMO Endian](https://classroom.github.com/a/JNsKdANK)
 - Онлайн лекции:
-  - [1. Работа с памятью (9.10)](https://drive.google.com/file/d/14vr2z-H5RV0FeZ0oVbkulqJKQ8pVTrtG/view?usp=sharing)
+  - [1. Работа с памятью](https://drive.google.com/file/d/14vr2z-H5RV0FeZ0oVbkulqJKQ8pVTrtG/view?usp=sharing) (9.10)
 - [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
 - [Снижение балла при сдаче после 0 дедлайна](https://m3104.nawinds.dev/deadlines/#%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)
 
