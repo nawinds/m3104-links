@@ -114,3 +114,8 @@ sidebar_position: 1
 
 #### Есть что добавить/исправить? Внесите изменения в Markdown по ссылке ниже!
 **[Редактировать страницу](https://github.com/nawinds/m3104-links/edit/master/src/pages/index.md)**
+
+---
+
+<img src="https://m3104.nawinds.dev/img/android-chrome-192x192.png" alt="drawing" width="15"/> Установите веб-приложение со ссылками на свое устройство!
+- [Версия для Android](https://m3104.nawinds.dev/M3104.apk)
