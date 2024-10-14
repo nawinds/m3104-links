@@ -12,6 +12,7 @@ sidebar_position: 1
 
 - [C++ Лаба 2. ITMO Endian](https://classroom.github.com/a/JNsKdANK)
 - [Лаба по алгосам №2](https://sort-me.org/contest/247)
+- [Лаба по алгосам №3](https://sort-me.org/contest/249)
 
 
 ## МатАн и ЛинАл
@@ -106,13 +107,9 @@ sidebar_position: 1
 - [Форма для загрузки отчетов](https://forms.gle/P1SgH6CWJuGqDyncA)
 - [Таблица с баллами](https://docs.google.com/spreadsheets/d/1YBK60x-2L0yD7gju4-BzX7ii0b4oQPBfIUOBx4Y-aXc/edit?gid=1377017426#gid=1377017426)
 
-#### Полезное
-- [Git на русском](https://git-scm.com/book/ru/v2)
-
 
 ## Другое
 
-- [Капуста бот: очередь на сдачу](https://t.me/distributionM3104_Bot)
 - [Список группы](https://docs.google.com/spreadsheets/d/1qgzLDFRAlsFhHSkQEIVNwaQkZ-5t6V9yDrRmpBFVx6k/edit?usp=sharing)
 
 ---
