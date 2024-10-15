@@ -77,6 +77,7 @@ sidebar_position: 1
 - [Discord: awesome-cpp](https://discord.gg/QhuennRzkK)
 - [Таблица с баллами осеннего семестра](https://docs.google.com/spreadsheets/d/1H6KX7RjUtoFQQmObNk2b9i2EnXfLiF8H8YGTdTYuL0s/edit?gid=1481585521#gid=1481585521)
 - [GitHub: Лекции](https://github.com/is-itmo-c-24/lectures)
+- [Заявка на code review](https://forms.gle/acR14zEEAECD7mcU7)
 - Семинары:
   - [1. Cmake, парсинг аргументов, создание утилиты для копирования файла](https://drive.google.com/file/d/1AyHJQmffsv1Nv31oR0OtqPvcu3KmyFtI/view?usp=drivesdk) (Запись)
   - 2. Указатели
