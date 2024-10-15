@@ -40,12 +40,16 @@ sidebar_position: 1
   - [Памятка](https://docs.google.com/document/d/14rxNIPiW9FW3BuyEtAu947BJZ0UkJFu6WAr0zULDbmA/edit#heading=h.j75x0g10s2dp)
   - [Литература](https://drive.google.com/drive/folders/1W63cvUPTaqqHQWqAnkdz1mVHGnfQyNjC)
   - Домашние задания:
-    - [1. Теория множеств](https://drive.google.com/drive/folders/1kO-N_k2WBsFADQxxYBKJ2X9TcUmMMaGT)
+    - [1. Set theory (Теория множеств)](https://drive.google.com/drive/folders/1kO-N_k2WBsFADQxxYBKJ2X9TcUmMMaGT)
        - [CheatSheet](https://drive.google.com/file/d/1kCIq7WjW2ta7ug2BvSKw1kIZ4aAMY-x4/view)
        - [Version 1](https://drive.google.com/file/d/1-3Jif5RZ1MGExOLCIVkbf1YMiua9iEtH/view)
        - [Version 2](https://drive.google.com/file/d/1snw1Kfn6XGCbLADq2O4UgXKjby3qQIFj/view)
        - [Version 3](https://drive.google.com/file/d/1Don-W2gMf3WzBZ2lfJabY9OHccbi3B6y/view)
        - Решения загружать по ссылке из [сообщения](https://discord.com/channels/1279787292034076817/1279793137207869494/1284955025256353844). (PDF &lt; 10 MB !!!)
+    - [1. Binary relations](https://drive.google.com/drive/folders/1pek80ffHCe-71bcx_Lc1YbAZfFWqyTXn)
+       - [CheatSheet](https://drive.google.com/file/d/10dkxpG7dSc4oBUPI-duGwWzGoMm5G9VV/view)
+       - [Version 1](https://drive.google.com/file/d/1QZhhco3pkJWKJfGP42SMIytUFRnsZaE3/view)
+       - Решения загружать по ссылке из [сообщения](https://discord.com/channels/1279787292034076817/1279793137207869494/1295652038298042388). (PDF &lt; 10 MB !!!)
 
 
 ## Алгоритмы
