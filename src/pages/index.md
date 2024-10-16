@@ -85,6 +85,7 @@ sidebar_position: 1
 - Лабораторные работы:
   - [1. LogAnalyzer](https://classroom.github.com/a/Xcf9cHNQ)
   - [2. ITMO Endian](https://classroom.github.com/a/JNsKdANK)
+  - [3. Sandpile Model](https://classroom.github.com/a/rq_OphW2)
 - Онлайн лекции:
   - [1. Работа с памятью](https://drive.google.com/file/d/14vr2z-H5RV0FeZ0oVbkulqJKQ8pVTrtG/view?usp=sharing) (9.10)
 - [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
