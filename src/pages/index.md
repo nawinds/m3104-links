@@ -117,6 +117,7 @@ sidebar_position: 1
 ## Другое
 
 - [Список группы](https://docs.google.com/spreadsheets/d/1qgzLDFRAlsFhHSkQEIVNwaQkZ-5t6V9yDrRmpBFVx6k/edit?usp=sharing)
+- [На всякий случай](https://m3104.nawinds.dev/lgd(1).pdf)
 
 ---
 
