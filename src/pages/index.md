@@ -82,6 +82,7 @@ sidebar_position: 1
   - [1. Cmake, парсинг аргументов, создание утилиты для копирования файла](https://drive.google.com/file/d/1AyHJQmffsv1Nv31oR0OtqPvcu3KmyFtI/view?usp=drivesdk) (Запись)
   - 2. Указатели
   - [3. Работа с памятью](https://www.youtube.com/watch?v=n_8mNotAWi8) (Запись)
+  - [4. Cmake](https://www.youtube.com/watch?v=PEJrbshnHZg) (Запись)
 - Лабораторные работы:
   - [1. LogAnalyzer](https://classroom.github.com/a/Xcf9cHNQ)
   - [2. ITMO Endian](https://classroom.github.com/a/JNsKdANK)
