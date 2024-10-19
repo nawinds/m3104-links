@@ -97,7 +97,7 @@ window.onload = () => {
                 ordered = ordered.sort(CompareDeadlines);
                 ordered.forEach(PrintDeadline);
 
-                text += "<a href='https://github.com/nawinds/m3104-links/edit/master/static/api-deadlines' target='_blank'>" +
+                text += "<a href='https://m3104.nawinds.dev/deadlines-editing-instructions' target='_blank'>" +
                     "Добавить дедлайн</a>"
                 deadlinesP.innerHTML = text;
                 deadlinesElement2.appendChild(deadlinesP);
