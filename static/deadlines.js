@@ -66,7 +66,7 @@ function PrintDeadline(d) {
                     ? " дня" : " дней");
         }
 
-        const options = {month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit'};
+        const options = {month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', weekday: 'short'};
         text += " (" + new Date(unixTimeDeadline).toLocaleDateString('ru-RU', options) + ")";
         text += "<br>";
     }
