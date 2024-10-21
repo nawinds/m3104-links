@@ -105,5 +105,5 @@ window.onload = () => {
             .catch(error => {
                 console.error(error.message);
             });
-    }, 0);
+    }, 100);
 };
