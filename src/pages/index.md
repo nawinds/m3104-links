@@ -13,6 +13,7 @@ sidebar_position: 1
 - [C++ Лаба 2. ITMO Endian](https://classroom.github.com/a/JNsKdANK)
 - [Лаба по алгосам №2](https://sort-me.org/contest/247)
 - [Лаба по алгосам №3](https://sort-me.org/contest/249)
+- [Тиньков про ИТМО](https://youtu.be/pdjEya1uypM?si=gW5e8pGxtML_1U-a)
 
 
 ## МатАн и ЛинАл
