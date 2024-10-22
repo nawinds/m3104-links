@@ -11,6 +11,7 @@ sidebar_position: 1
 ## Актуальное
 
 - [Стрим Далевской](https://www.twitch.tv/uwu_dimac_uwu)
+- [Записи лекций Далевской](https://m3104.nawinds.dev/math-lecture-recordings)
 - [C++ Лаба 2. ITMO Endian](https://classroom.github.com/a/JNsKdANK)
 - [Лаба по алгосам №2](https://sort-me.org/contest/247)
 - [Лаба по алгосам №3](https://sort-me.org/contest/249)
@@ -22,6 +23,7 @@ sidebar_position: 1
 Далевская Ольга Петровна, Сарычев Павел Александрович
 
 - [Стрим Далевской](https://www.twitch.tv/uwu_dimac_uwu)
+- [Записи лекций Далевской](https://m3104.nawinds.dev/math-lecture-recordings)
 - [Telegram: ФИТИП 3103 3104](tg://privatepost?channel=2194579892&single)
 - [Матан](https://buildin.ai/share/e9b5fad6-6831-4067-b469-f79e5cf78d40)
   - [Учебный план на семестр](https://buildin.ai/share/a3bb946a-335d-4ab7-b2bc-12941ed9d4e2#6154dca0-59e2-4981-a98f-2ec8d0767ac1)
