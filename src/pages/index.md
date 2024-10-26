@@ -124,6 +124,7 @@ sidebar_position: 1
 ## Другое
 
 - [Список группы](https://docs.google.com/spreadsheets/d/1qgzLDFRAlsFhHSkQEIVNwaQkZ-5t6V9yDrRmpBFVx6k/edit?usp=sharing)
+- [Форум 1 потока ИСа](https://t.me/+-vtPNsU8axxiZDVi)
 - [На всякий случай](https://m3104.nawinds.dev/lgd(1).pdf)
 
 ---
