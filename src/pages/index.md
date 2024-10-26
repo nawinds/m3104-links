@@ -10,12 +10,10 @@ sidebar_position: 1
 
 ## Актуальное
 
-- [Стрим Далевской](https://www.twitch.tv/uwu_dimac_uwu)
 - [Записи лекций Далевской](https://m3104.nawinds.dev/math-lecture-recordings)
-- [C++ Лаба 2. ITMO Endian](https://classroom.github.com/a/JNsKdANK)
-- [Лаба по алгосам №2](https://sort-me.org/contest/247)
-- [Лаба по алгосам №3](https://sort-me.org/contest/249)
+- [Форум 1 потока ИСа](https://t.me/+-vtPNsU8axxiZDVi)
 - [Тиньков про ИТМО](https://youtu.be/pdjEya1uypM?si=gW5e8pGxtML_1U-a)
+- [На всякий случай](https://m3104.nawinds.dev/lgd(1).pdf)
 
 
 ## МатАн и ЛинАл
