@@ -50,7 +50,7 @@ sidebar_position: 1
        - [Version 3](https://drive.google.com/file/d/1Don-W2gMf3WzBZ2lfJabY9OHccbi3B6y/view)
        - Решения загружать по ссылке из [сообщения](https://discord.com/channels/1279787292034076817/1279793137207869494/1284955025256353844). (PDF &lt; 10 MB !!!)
        - [Результаты](https://docs.google.com/spreadsheets/d/1YwlvMZMSQ8_ea5L1KzU6JA9f-MgZMnVxKvJkp_HAlsE/edit?gid=1420156757#gid=1420156757)
-    - [1. Binary relations](https://drive.google.com/drive/folders/1pek80ffHCe-71bcx_Lc1YbAZfFWqyTXn)
+    - [2. Binary relations](https://drive.google.com/drive/folders/1pek80ffHCe-71bcx_Lc1YbAZfFWqyTXn)
        - [CheatSheet](https://drive.google.com/file/d/10dkxpG7dSc4oBUPI-duGwWzGoMm5G9VV/view)
        - [Version 1](https://drive.google.com/file/d/1QZhhco3pkJWKJfGP42SMIytUFRnsZaE3/view)
        - Решения загружать по ссылке из [сообщения](https://discord.com/channels/1279787292034076817/1279793137207869494/1295652038298042388). (PDF &lt; 10 MB !!!)
