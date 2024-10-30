@@ -70,6 +70,7 @@ sidebar_position: 1
   - [Лабораторная №1](https://sort-me.org/contest/246?code=2kQZnaLwvts3npoqutjw)
   - [Лабораторная №2](https://sort-me.org/contest/247)
   - [Лабораторная №3](https://sort-me.org/contest/249)
+  - [Лабораторная №4](https://sort-me.org/contest/252)
 
 
 ## Основы программирования
