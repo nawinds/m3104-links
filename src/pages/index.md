@@ -61,6 +61,7 @@ sidebar_position: 1
 Ткаченко Данил Михайлович, Усатов Никита, _ментор: Толстокулаков Игорь_
 
 - [Telegram: algo 02,04](tg://privatepost?channel=2245578546&single)
+- [Алго & ДМ инфо](https://t.me/algo_math_info)
 - [Discord: ДМ+Алго](https://discord.com/channels/1279787292034076817/1279793168639856660)
 - [Таблица с баллами](https://docs.google.com/spreadsheets/d/1DwOhN0JpuUK3i0Zg4rag6J_vBQYGrzjdNWJ20UCTuI8/edit?usp=sharing)
 - [Материалы](https://dm-aisd.yonote.ru/share/itmo_dm_aisd)
