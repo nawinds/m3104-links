@@ -91,7 +91,7 @@ sidebar_position: 1
 - [Заявка на code review](https://forms.gle/acR14zEEAECD7mcU7)
 - Семинары:
   - [1. Cmake, парсинг аргументов, создание утилиты для копирования файла](https://drive.google.com/file/d/1AyHJQmffsv1Nv31oR0OtqPvcu3KmyFtI/view?usp=drivesdk) (Запись)
-  - 2. Указатели
+  - <span>2. Указатели</span>
   - [3. Работа с памятью](https://www.youtube.com/watch?v=n_8mNotAWi8) (Запись)
   - [4. Cmake](https://www.youtube.com/watch?v=PEJrbshnHZg) (Запись)
 - Лабораторные работы:
