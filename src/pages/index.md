@@ -10,10 +10,11 @@ sidebar_position: 1
 
 ## Актуальное
 
-- [Записи лекций Далевской](https://m3104.nawinds.dev/math-lecture-recordings)
-- [Форум 1 потока ИСа](https://t.me/+-vtPNsU8axxiZDVi)
-- [Тиньков про ИТМО](https://youtu.be/pdjEya1uypM?si=gW5e8pGxtML_1U-a)
-- [На всякий случай](https://m3104.nawinds.dev/lgd(1).pdf)
+- [Запись на коллоквиум по алгосам](https://docs.google.com/spreadsheets/d/1cgOhUYFTNjDtloeRPJHILegmMahrkkTGG2oeoktf6LQ/edit?gid=925462696#gid=925462696)
+- [FAQ о коллоквиуме по алгосам](https://dm-aisd.yonote.ru/share/itmo_aisd_colloquium)
+- [C++: Лаба 3. Sandpile Model](https://classroom.github.com/a/rq_OphW2)
+[ИСРПО: Лаба 4. Написание Unit тестов](https://docs.google.com/document/d/1FTIUanKPLE66ywges_Zf8kvCLtbz9-GGN_uUrUX-Ank/edit#heading=h.4md9wg3muug)
+  - [Сообщение с пояснениями](https://t.me/c/2292794278/225)
 
 
 ## МатАн и ЛинАл
@@ -72,6 +73,10 @@ sidebar_position: 1
   - [Лабораторная №2](https://sort-me.org/contest/247)
   - [Лабораторная №3](https://sort-me.org/contest/249)
   - [Лабораторная №4](https://sort-me.org/contest/252)
+ 
+Коллоквиум 7 и 8 ноября
+- [Запись на коллоквиум по алгосам](https://docs.google.com/spreadsheets/d/1cgOhUYFTNjDtloeRPJHILegmMahrkkTGG2oeoktf6LQ/edit?gid=925462696#gid=925462696)
+- [FAQ о коллоквиуме по алгосам](https://dm-aisd.yonote.ru/share/itmo_aisd_colloquium)
 
 
 ## Основы программирования
