@@ -91,9 +91,10 @@ sidebar_position: 1
 - [Заявка на code review](https://forms.gle/acR14zEEAECD7mcU7)
 - Семинары:
   - [1. Cmake, парсинг аргументов, создание утилиты для копирования файла](https://drive.google.com/file/d/1AyHJQmffsv1Nv31oR0OtqPvcu3KmyFtI/view?usp=drivesdk) (Запись)
-  - <span>2. Указатели</span>
+  - <span>2. Указатели (Если у кого-то есть запись, [добавьте](https://github.com/nawinds/m3104-links/edit/master/src/pages/index.md) её сюда плиз)</span>
   - [3. Работа с памятью](https://www.youtube.com/watch?v=n_8mNotAWi8) (Запись)
   - [4. Cmake](https://www.youtube.com/watch?v=PEJrbshnHZg) (Запись)
+  - [5. Binary formats. WAV encoder & decoder](https://www.youtube.com/watch?v=C0C1a67BNbU) (Запись)
 - Лабораторные работы:
   - [1. LogAnalyzer](https://classroom.github.com/a/Xcf9cHNQ)
   - [2. ITMO Endian](https://classroom.github.com/a/JNsKdANK)
