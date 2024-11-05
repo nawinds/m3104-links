@@ -15,6 +15,8 @@ sidebar_position: 1
 - [C++: Лаба 3. Sandpile Model](https://classroom.github.com/a/rq_OphW2)
 - [ИСРПО: Лаба 4. Написание Unit тестов](https://docs.google.com/document/d/1FTIUanKPLE66ywges_Zf8kvCLtbz9-GGN_uUrUX-Ank/edit#heading=h.4md9wg3muug)
   - [Сообщение с пояснениями](https://t.me/c/2292794278/225)
+- [Примерный список тем к коллоквиуму по ДМ](https://docs.google.com/document/d/1A1bb3gZGCUVZPhP4I-ibJlQPMGGcvsLZH-aiqk382VQ/edit?tab=t.0#heading=h.4l7hj64uo91w)
+
 
 
 ## МатАн и ЛинАл
@@ -55,6 +57,8 @@ sidebar_position: 1
        - [CheatSheet](https://drive.google.com/file/d/10dkxpG7dSc4oBUPI-duGwWzGoMm5G9VV/view)
        - [Version 1](https://drive.google.com/file/d/1QZhhco3pkJWKJfGP42SMIytUFRnsZaE3/view)
        - Решения загружать по ссылке из [сообщения](https://discord.com/channels/1279787292034076817/1279793137207869494/1295652038298042388). (PDF &lt; 10 MB !!!)
+- Коллоквиум №1
+  - [Примерный список тем к коллоквиуму](https://docs.google.com/document/d/1A1bb3gZGCUVZPhP4I-ibJlQPMGGcvsLZH-aiqk382VQ/edit?tab=t.0#heading=h.4l7hj64uo91w)
 
 
 ## Алгоритмы
