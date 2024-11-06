@@ -1,4 +1,4 @@
-[← Назад](https://m3104.nawinds.dev/)
+<a href="javascript:history.back()">← Назад</a>
 
 # Записи лекций Далевской
 
