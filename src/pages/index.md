@@ -28,6 +28,7 @@ NEW! [Распределение баллов за семестр](https://m3104
 - [Стрим Далевской](https://www.twitch.tv/uwu_dimac_uwu)
 - [Записи лекций Далевской](https://m3104.nawinds.dev/math-lecture-recordings)
 - [Telegram: ФИТИП 3103 3104](tg://privatepost?channel=2194579892&single)
+- [Распределение баллов за семестр](https://m3104.nawinds.dev/point-distribution#матан)
 - [Матан](https://buildin.ai/share/e9b5fad6-6831-4067-b469-f79e5cf78d40)
   - [Учебный план на семестр](https://buildin.ai/share/a3bb946a-335d-4ab7-b2bc-12941ed9d4e2#6154dca0-59e2-4981-a98f-2ec8d0767ac1)
   - [Зачетные работы](https://buildin.ai/share/7c3aea7d-388a-4bf7-8f65-8b4265f30bf2#c804f48e-651a-482c-9a4c-6935d1829209)
@@ -44,6 +45,7 @@ NEW! [Распределение баллов за семестр](https://m3104
 
 - [Telegram: Дискретные покемоны y28](tg://privatepost?channel=2179126405&single&thread=1)
 - [Discord: ДМ+Алго](https://discord.com/channels/1279787292034076817/1279793137207869494)
+- [Распределение баллов за семестр](https://m3104.nawinds.dev/point-distribution#дискретная-математика)
 - [Папка Google Drive](https://drive.google.com/drive/folders/1ReeYK89xcJf7cO9Vg9pOifGVoxdJPzMd)
   - [Памятка](https://docs.google.com/document/d/14rxNIPiW9FW3BuyEtAu947BJZ0UkJFu6WAr0zULDbmA/edit#heading=h.j75x0g10s2dp)
   - [Литература](https://drive.google.com/drive/folders/1W63cvUPTaqqHQWqAnkdz1mVHGnfQyNjC)
@@ -71,6 +73,7 @@ NEW! [Распределение баллов за семестр](https://m3104
 - [Telegram: Алго & ДМ инфо](https://t.me/algo_math_info)
 - [Discord: ДМ+Алго](https://discord.com/channels/1279787292034076817/1279793168639856660)
 - [Таблица с баллами](https://docs.google.com/spreadsheets/d/1DwOhN0JpuUK3i0Zg4rag6J_vBQYGrzjdNWJ20UCTuI8/edit?usp=sharing)
+- [Распределение баллов за семестр](https://m3104.nawinds.dev/point-distribution#алгоритмы)
 - [Материалы](https://dm-aisd.yonote.ru/share/itmo_dm_aisd)
   - [Лекции](https://dm-aisd.yonote.ru/share/itmo_aisd_lections)
   - [Литература](https://dm-aisd.yonote.ru/share/itmo_aisd_books)
@@ -93,6 +96,7 @@ NEW! [Распределение баллов за семестр](https://m3104
 - [Telegram: ITMO C++ 24/25 (обсуждение)](https://t.me/+P7FY7vt4qCM3NTZi)
 - [Discord: awesome-cpp](https://discord.gg/QhuennRzkK)
 - [Таблица с баллами осеннего семестра](https://docs.google.com/spreadsheets/d/1H6KX7RjUtoFQQmObNk2b9i2EnXfLiF8H8YGTdTYuL0s/edit?gid=1481585521#gid=1481585521)
+- [Распределение баллов за семестр](https://m3104.nawinds.dev/point-distribution#основы-программирования)
 - [GitHub: Лекции](https://github.com/is-itmo-c-24/lectures)
 - [Заявка на code review](https://forms.gle/acR14zEEAECD7mcU7)
 - Семинары:
@@ -136,6 +140,7 @@ NEW! [Распределение баллов за семестр](https://m3104
 ## Другое
 
 - [Список группы](https://docs.google.com/spreadsheets/d/1qgzLDFRAlsFhHSkQEIVNwaQkZ-5t6V9yDrRmpBFVx6k/edit?usp=sharing)
+- [Распределение баллов за семестр и перевод оценок](https://m3104.nawinds.dev/point-distribution)
 - [Форум 1 потока ИСа](https://t.me/+-vtPNsU8axxiZDVi)
 - [На всякий случай](https://m3104.nawinds.dev/lgd(1).pdf)
 
