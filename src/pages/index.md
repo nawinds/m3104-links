@@ -8,6 +8,8 @@ sidebar_position: 1
 ## Дедлайны
 
 
+NEW! [Распределение баллов за семестр](https://m3104.nawinds.dev/point-distribution)
+
 ## Актуальное
 
 - [Запись на коллоквиум по алгосам](https://docs.google.com/spreadsheets/d/1cgOhUYFTNjDtloeRPJHILegmMahrkkTGG2oeoktf6LQ/edit?gid=925462696#gid=925462696)
