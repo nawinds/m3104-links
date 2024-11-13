@@ -27,15 +27,24 @@ jobs:
         id: commit_info
         run: |
           COMMIT_HASH=$(git log -1 --format=%H)
-          DATE=$(git log -1 --format=%ci | xargs -I{} date -d {} "+%d.%m.%y %H:%M")
+          DATE=$(git log -1 --format=%ci | xargs -I{} date -d {} "+%d %b %Y в %H:%M")
           echo "commit_date=$DATE" >> $GITHUB_ENV
           echo "commit_hash=$COMMIT_HASH" >> $GITHUB_ENV
 
-      - name: Update MDX file with last commit date and link
+      - name: Find changed MDX files
+        id: changed_files
         run: |
-          FILE_PATH="src/pages/index.mdx"
-          DATE_TEXT="<p>Последнее обновление: <a href='https://github.com/${{ github.repository }}/commit/${{ env.commit_hash }}' target='_blank'>${{ env.commit_date }}</a></p>"
-          sed -i "/<!-- COMMIT DATE -->/c\\$DATE_TEXT" $FILE_PATH
+          # Get the list of changed MDX files in the latest commit
+          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD | grep "\.mdx$")
+          echo "changed_files=$CHANGED_FILES" >> $GITHUB_ENV
+
+      - name: Update changed MDX files with last commit date and link
+        run: |
+          # Loop through the changed MDX files and update each with the commit date and link
+          for FILE_PATH in ${{ env.changed_files }}; do
+            DATE_TEXT="<p><i>Последнее обновление: <a href='https://github.com/${{ github.repository }}/commit/${{ env.commit_hash }}' target='_blank'>${{ env.commit_date }}</a></i></p>"
+            sed -i "/<!-- COMMIT DATE -->/c\\$DATE_TEXT" $FILE_PATH
+          done
         shell: bash
 
       - name: Build website
