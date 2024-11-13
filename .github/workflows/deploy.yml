@@ -39,6 +39,7 @@ jobs:
           echo "changed_files=$CHANGED_FILES" >> $GITHUB_ENV
 
       - name: Update changed MDX files with last commit date and link
+        if: ${{ env.changed_files != '' }}
         run: |
           # Loop through the changed MDX files and update each with the commit date and link
           for FILE_PATH in ${{ env.changed_files }}; do
