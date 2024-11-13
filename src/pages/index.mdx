@@ -145,39 +145,7 @@ sidebar_position: 1
 #### Есть что добавить/исправить? Внесите изменения в Markdown по ссылке ниже!
 **[Редактировать страницу](https://github.com/nawinds/m3104-links/edit/master/src/pages/index.mdx)**
 
-import React, { useEffect, useState } from 'react';
-
-export default function LastCommitLink() {
-  const [commit, setCommit] = useState({ date: '', url: '' });
-
-  useEffect(() => {
-    fetch('https://api.github.com/repos/nawinds/m3104-links/commits')
-      .then(response => response.json())
-      .then(data => {
-        if (data.length > 0) {
-          const date = new Date(data[0].commit.committer.date).toLocaleString();
-          const url = data[0].html_url;
-          setCommit({ date, url });
-        }
-      })
-      .catch(error => {
-        console.error('Error fetching commit data:', error);
-      });
-  }, []);
-
-  return (
-    <div>
-      {commit.date ? (
-        <p>
-          <i>Последний раз страница была обновлена: <a href={commit.url} target="_blank">{commit.date}</a></i>
-        </p>
-      ) : (
-        <p>Загружается последний коммит...</p>
-      )}
-    </div>
-  );
-}
-
+<i>Дата последнего обновления: <!-- COMMIT DATE --></i>
 
 ---
 
