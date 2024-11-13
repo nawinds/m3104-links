@@ -22,6 +22,11 @@ jobs:
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
+
+      - name: Install Russian locale
+        run: |
+          sudo locale-gen ru_RU.UTF-8
+          sudo update-locale LANG=ru_RU.UTF-8
       
       - name: Get latest commit info
         id: commit_info
