@@ -39,9 +39,16 @@ jobs:
       - name: Find changed MDX files
         id: changed_files
         run: |
-          # Get the list of changed MDX files in the latest commit
-          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD | grep "\.mdx$")
-          echo "changed_files=$CHANGED_FILES" >> $GITHUB_ENV
+          # Get the list of changed MDX files in the latest commit, only *.mdx files
+          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD -- "*.mdx")
+
+          # Check if any MDX files were changed
+          if [ -z "$CHANGED_FILES" ]; then
+            echo "No MDX files were changed in the commit."
+            echo "changed_files=" >> $GITHUB_ENV
+          else
+            echo "changed_files=$CHANGED_FILES" >> $GITHUB_ENV
+          fi
 
       - name: Update changed MDX files with last commit date and link
         if: ${{ env.changed_files != '' }}
