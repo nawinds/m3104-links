@@ -22,6 +22,20 @@ jobs:
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
+      
+      - name: Get latest commit date
+        id: commit_date
+        run: |
+          DATE=$(git log -1 --format=%ci)
+          echo "commit_date=$DATE" >> $GITHUB_ENV
+
+      - name: Update MDX file with last commit date
+        run: |
+          FILE_PATH="src/pages/index.mdx"
+          DATE_TEXT="${{ env.commit_date }}"
+          sed -i "/<!-- COMMIT DATE -->/c\\$DATE_TEXT" $FILE_PATH
+        shell: bash
+
       - name: Build website
         run: yarn build
 
