@@ -23,16 +23,18 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       
-      - name: Get latest commit date
-        id: commit_date
+      - name: Get latest commit info
+        id: commit_info
         run: |
-          DATE=$(git log -1 --format=%ci)
+          COMMIT_HASH=$(git log -1 --format=%H)
+          DATE=$(git log -1 --format=%ci | xargs -I{} date -d {} "+%d.%m.%y %H:%M")
           echo "commit_date=$DATE" >> $GITHUB_ENV
+          echo "commit_hash=$COMMIT_HASH" >> $GITHUB_ENV
 
-      - name: Update MDX file with last commit date
+      - name: Update MDX file with last commit date and link
         run: |
           FILE_PATH="src/pages/index.mdx"
-          DATE_TEXT="${{ env.commit_date }}"
+          DATE_TEXT="<p>Последнее обновление: <a href='https://github.com/${{ github.repository }}/commit/${{ env.commit_hash }}' target='_blank'>${{ env.commit_date }}</a></p>"
           sed -i "/<!-- COMMIT DATE -->/c\\$DATE_TEXT" $FILE_PATH
         shell: bash
 
