@@ -27,7 +27,7 @@ jobs:
         id: commit_info
         run: |
           COMMIT_HASH=$(git log -1 --format=%H)
-          DATE=$(git log -1 --format=%ci | xargs -I{} date -d {} "+%d %b %Y в %H:%M")
+          DATE=$(git log -1 --format=%ci | xargs -I{} TZ="Europe/Moscow" date -d {} "+%d %b %Y в %H:%M" | LANG=ru_RU.UTF-8)
           echo "commit_date=$DATE" >> $GITHUB_ENV
           echo "commit_hash=$COMMIT_HASH" >> $GITHUB_ENV
 
