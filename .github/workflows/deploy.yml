@@ -22,53 +22,7 @@ jobs:
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
-
-      - name: Install Russian locale
-        run: |
-          sudo locale-gen ru_RU.UTF-8
-          sudo update-locale LANG=ru_RU.UTF-8
-      
-      - name: Get latest commit info
-        id: commit_info
-        run: |
-          COMMIT_HASH=$(git log -1 --format=%H)
-          # Set the timezone to Moscow
-          DATE=$(TZ="Europe/Moscow" LANG=ru_RU.UTF-8 git log -1 --format=%ci | xargs -I{} date -d "{}" "+%d %b %Y в %H:%M")
-          echo "commit_date=$DATE" >> $GITHUB_ENV
-          echo "commit_hash=$COMMIT_HASH" >> $GITHUB_ENV
-
-      - name: Find changed MDX files
-        id: changed_files
-        run: |
-          # Get the list of changed MDX files in the latest commit, only *.mdx files
-          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD -- "*.mdx")
-
-          # Check if any MDX files were changed
-          if [ -z "$CHANGED_FILES" ]; then
-            echo "No MDX files were changed in the commit."
-            echo "changed_files=" >> $GITHUB_ENV
-          else
-            echo "changed_files=$CHANGED_FILES" >> $GITHUB_ENV
-          fi
-
-      - name: Update changed MDX files with last commit date and link
-        run: |
-          # Loop through the changed MDX files and update each with the commit date and link
-          for FILE_PATH in ${{ env.changed_files }}; do
-            # Extract current "last updated at" date (if exists) from the file
-            CURRENT_DATE=$(grep -oP "(?<=<!-- COMMIT DATE -->).*(?=</i></p>)" $FILE_PATH || echo "No previous date found")
-
-            # If file has been modified, update the commit date and link
-            if [ "$CURRENT_DATE" != "No previous date found" ]; then
-              DATE_TEXT="<p><i>Последнее обновление: <a href='https://github.com/${{ github.repository }}/commit/${{ env.commit_hash }}' target='_blank'>${{ env.commit_date }}</a></i></p>"
-              sed -i "/<!-- COMMIT DATE -->/c\\$DATE_TEXT" $FILE_PATH
-            else
-              # If no previous date exists, add a new date with the commit info
-              echo "<p><i>Последнее обновление: <a href='https://github.com/${{ github.repository }}/commit/${{ env.commit_hash }}' target='_blank'>${{ env.commit_date }}</a></i></p>" >> $FILE_PATH
-            fi
-          done
-        shell: bash
-
+        
       - name: Build website
         run: yarn build
 
