@@ -76,16 +76,16 @@ function PrintDeadline(d) {
 window.onload = () => {
     console.log('Page is fully loaded, including React');
     setTimeout(() => {
-        waitForElement('дедлайны', 5000)
+        waitForElement('подождите-а-что-это-у-вас-на-носу', 5000)
             .then(element => {
-                let deadlinesElement = document.getElementById("дедлайны");
+                let deadlinesElement = document.getElementById("подождите-а-что-это-у-вас-на-носу");
 
                 let deadlinesElement2 = document.createElement('div');
 
                 deadlinesElement2.style = "background-color: rgb(0, 191, 255, 0.15); padding: 20px; " +
                     "border-radius: 15px; margin-bottom: 10px;";
                 let deadlinesElement2h2 = document.createElement('h2');
-                deadlinesElement2h2.id = "дедлайны";
+                deadlinesElement2h2.id = "подождите-а-что-это-у-вас-на-носу";
                 deadlinesElement2h2.innerHTML = deadlinesElement.innerHTML;
                 deadlinesElement2.appendChild(deadlinesElement2h2);
                 deadlinesElement.parentNode.replaceChild(deadlinesElement2, deadlinesElement);
