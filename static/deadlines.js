@@ -82,8 +82,8 @@ window.onload = () => {
 
                 let deadlinesElement2 = document.createElement('div');
 
-                deadlinesElement2.style = "background-color: rgb(0, 191, 255, 0.15); padding: 20px; " +
-                    "border-radius: 15px; margin-bottom: 10px;";
+                deadlinesElement2.id = "deadlinesBlock";
+                deadlinesElement2.style = "margin-bottom: 20px;";
                 let deadlinesElement2h2 = document.createElement('h2');
                 deadlinesElement2h2.id = "подождите-а-что-это-у-вас-на-носу";
                 deadlinesElement2h2.innerHTML = deadlinesElement.innerHTML;
@@ -97,7 +97,7 @@ window.onload = () => {
                 ordered = ordered.sort(CompareDeadlines);
                 ordered.forEach(PrintDeadline);
 
-                text += "<a href='https://m3104.nawinds.dev/deadlines-editing-instructions'>" +
+                text += "<a href='/deadlines-editing-instructions'>" +
                     "Добавить дедлайн</a>"
                 deadlinesP.innerHTML = text;
                 deadlinesElement2.appendChild(deadlinesP);

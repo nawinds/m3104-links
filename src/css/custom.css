@@ -6,25 +6,250 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+    --ifm-color-primary: #3578e5;
+    --ifm-color-primary-dark: #2f6ac8;
+    --ifm-color-primary-darker: #295bac;
+    --ifm-color-primary-darkest: #21498a;
+    --ifm-color-primary-light: #4181ea;
+    --ifm-color-primary-lighter: #5691f1;
+    --ifm-color-primary-lightest: #70a2f3;
+    --ifm-code-font-size: 95%;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+    #deadlinesBlock {
+        background-color: rgb(0, 191, 255, 0.15);
+        padding: 20px;
+        border-radius: 15px;
+        margin-bottom: 10px;
+    }
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #6195e8;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+.back-to-home-button {
+    background-color: rgba(53, 120, 229, 0.10);
+    box-shadow: -2px -2px 4px rgba(53, 120, 229, 0.5);
+    color: var(--ifm-color-primary);
+    border: 1px solid var(--ifm-color-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.back-to-home-button:hover {
+    background-color: var(--ifm-color-primary);
+    color: #fff;
+}
+
+.snowflake {
+    color: rgba(62, 169, 244, 0.8);
+    font-size: 1.5em;
+    font-family: Arial, sans-serif;
+    text-shadow: 0 0 5px #fff;
+}
+
+.snowflake, .snowflake .inner {
+    animation-iteration-count: infinite;
+    animation-play-state: running
+}
+
+@keyframes snowflakes-fall {
+    0% {
+        transform: translateY(0)
+    }
+    100% {
+        transform: translateY(110vh)
+    }
+}
+
+@keyframes snowflakes-shake {
+    0%, 100% {
+        transform: translateX(0)
+    }
+    50% {
+        transform: translateX(80px)
+    }
+}
+
+.snowflake {
+    position: fixed;
+    top: -10%;
+    z-index: -100;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+    animation-name: snowflakes-shake;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out
+}
+
+.snowflake .inner {
+    animation-duration: 10s;
+    animation-name: snowflakes-fall;
+    animation-timing-function: linear
+}
+
+.snowflake:nth-of-type(0) {
+    left: 1%;
+    animation-delay: 0s
+}
+
+.snowflake:nth-of-type(0) .inner {
+    animation-delay: 0s
+}
+
+.snowflake:first-of-type {
+    left: 10%;
+    animation-delay: 1s
+}
+
+.snowflake:first-of-type .inner, .snowflake:nth-of-type(8) .inner {
+    animation-delay: 1s
+}
+
+.snowflake:nth-of-type(2) {
+    left: 20%;
+    animation-delay: .5s
+}
+
+.snowflake:nth-of-type(2) .inner, .snowflake:nth-of-type(6) .inner {
+    animation-delay: 6s
+}
+
+.snowflake:nth-of-type(3) {
+    left: 30%;
+    animation-delay: 2s
+}
+
+.snowflake:nth-of-type(11) .inner, .snowflake:nth-of-type(3) .inner {
+    animation-delay: 4s
+}
+
+.snowflake:nth-of-type(4) {
+    left: 40%;
+    animation-delay: 2s
+}
+
+.snowflake:nth-of-type(10) .inner, .snowflake:nth-of-type(4) .inner {
+    animation-delay: 2s
+}
+
+.snowflake:nth-of-type(5) {
+    left: 50%;
+    animation-delay: 3s
+}
+
+.snowflake:nth-of-type(5) .inner {
+    animation-delay: 8s
+}
+
+.snowflake:nth-of-type(6) {
+    left: 60%;
+    animation-delay: 2s
+}
+
+.snowflake:nth-of-type(7) {
+    left: 70%;
+    animation-delay: 1s
+}
+
+.snowflake:nth-of-type(7) .inner {
+    animation-delay: 2.5s
+}
+
+.snowflake:nth-of-type(8) {
+    left: 80%;
+    animation-delay: 0s
+}
+
+.snowflake:nth-of-type(9) {
+    left: 90%;
+    animation-delay: 1.5s
+}
+
+.snowflake:nth-of-type(9) .inner {
+    animation-delay: 3s
+}
+
+.snowflake:nth-of-type(10) {
+    left: 25%;
+    animation-delay: 0s
+}
+
+.snowflake:nth-of-type(11) {
+    left: 65%;
+    animation-delay: 2.5s
+}
+
+[data-theme='dark'] {
+    --ifm-background-color: #17111c !important;
+    --ifm-background-surface-color: #3d1a55 !important;
+
+    .footer--dark {
+        --ifm-footer-background-color: #021201 !important;
+    }
+
+    scrollbar-color: #5a4c65 #2a1c33 !important;
+
+    ::-webkit-scrollbar {
+        background-color: #2a1c33 !important; /* track color */
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #5a4c65 !important; /* thumb color */
+    }
+
+    [data-theme='dark']::-webkit-scrollbar-thumb:hover {
+        background-color: #957da8 !important; /* hover state */
+    }
+
+    --ifm-color-primary: #fd9f4f;
+    --ifm-color-primary-dark: #2f6ac8;
+    --ifm-color-primary-darker: #295bac;
+    --ifm-color-primary-darkest: #21498a;
+    --ifm-color-primary-light: #4181ea;
+    --ifm-color-primary-lighter: #5691f1;
+    --ifm-color-primary-lightest: #70a2f3;
+    --ifm-code-font-size: 95%;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+    --ifm-color-success-dark: rgb(4, 163, 60);
+    --ifm-color-success-contrast-background: rgba(3, 85, 48, 0.5) !important;
+
+    #deadlinesBlock {
+        background-color: rgba(133, 60, 161, 0.12);
+    }
+
+    .back-to-home-button {
+        background-color: rgba(253, 159, 79, 0.25);
+        box-shadow: -2px -2px 4px rgba(239, 159, 79, 0.8);
+        color: var(--ifm-color-primary);
+        border: 1px solid var(--ifm-color-primary);
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .back-to-home-button:hover {
+        background-color: var(--ifm-color-primary);
+        color: #000;
+    }
+
+    .snowflake {
+        color: rgba(255, 255, 255, 0.8);
+        text-shadow: 0 0 5px #000;
+        font-size: 1em;
+    }
+}
+
+/*[data-theme='dark'] {*/
+/*  --ifm-background-color: #1f2023 !important;*/
+/*  --ifm-background-surface-color: #2b2d30;*/
+/*  --ifm-color-primary: #699fe9;*/
+/*  --ifm-color-primary-dark: #2f6ac8;*/
+/*  --ifm-color-primary-darker: #295bac;*/
+/*  --ifm-color-primary-darkest: #21498a;*/
+/*  --ifm-color-primary-light: #4181ea;*/
+/*  --ifm-color-primary-lighter: #5691f1;*/
+/*  --ifm-color-primary-lightest: #70a2f3;*/
+/*  --ifm-code-font-size: 95%;*/
+/*  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);*/
+
+/*  #deadlinesBlock {*/
+/*    background-color: rgba(109, 166, 245, 0.15);*/
+/*  }*/
+/*}*/
