@@ -6,25 +6,78 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+    --ifm-color-primary: #3578e5;
+    --ifm-color-primary-dark: #2f6ac8;
+    --ifm-color-primary-darker: #295bac;
+    --ifm-color-primary-darkest: #21498a;
+    --ifm-color-primary-light: #4181ea;
+    --ifm-color-primary-lighter: #5691f1;
+    --ifm-color-primary-lightest: #70a2f3;
+    --ifm-code-font-size: 95%;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+    #deadlinesBlock {
+        background-color: rgb(0, 191, 255, 0.15);
+        padding: 20px;
+        border-radius: 15px;
+        margin-bottom: 10px;
+    }
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #6195e8;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+    --ifm-background-color: #17111c !important;
+    --ifm-background-surface-color: #3d1a55 !important;
+
+    .footer--dark {
+        --ifm-footer-background-color: #021201 !important;
+    }
+
+    scrollbar-color: #5a4c65 #2a1c33 !important;
+
+    ::-webkit-scrollbar {
+        background-color: #2a1c33 !important; /* track color */
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #5a4c65 !important; /* thumb color */
+    }
+
+    [data-theme='dark']::-webkit-scrollbar-thumb:hover {
+        background-color: #957da8 !important; /* hover state */
+    }
+
+    --ifm-color-primary: #fd9f4f;
+    --ifm-color-primary-dark: #2f6ac8;
+    --ifm-color-primary-darker: #295bac;
+    --ifm-color-primary-darkest: #21498a;
+    --ifm-color-primary-light: #4181ea;
+    --ifm-color-primary-lighter: #5691f1;
+    --ifm-color-primary-lightest: #70a2f3;
+    --ifm-code-font-size: 95%;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+    --ifm-color-success-dark: rgb(4, 163, 60);
+    --ifm-color-success-contrast-background: rgba(3, 85, 48, 0.5) !important;
+
+    #deadlinesBlock {
+        background-color: rgba(133, 60, 161, 0.12);
+    }
 }
+
+/*[data-theme='dark'] {*/
+/*  --ifm-background-color: #1f2023 !important;*/
+/*  --ifm-background-surface-color: #2b2d30;*/
+/*  --ifm-color-primary: #699fe9;*/
+/*  --ifm-color-primary-dark: #2f6ac8;*/
+/*  --ifm-color-primary-darker: #295bac;*/
+/*  --ifm-color-primary-darkest: #21498a;*/
+/*  --ifm-color-primary-light: #4181ea;*/
+/*  --ifm-color-primary-lighter: #5691f1;*/
+/*  --ifm-color-primary-lightest: #70a2f3;*/
+/*  --ifm-code-font-size: 95%;*/
+/*  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);*/
+
+/*  #deadlinesBlock {*/
+/*    background-color: rgba(109, 166, 245, 0.15);*/
+/*  }*/
+/*}*/

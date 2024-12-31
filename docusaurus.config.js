@@ -39,100 +39,108 @@ const config = {
             'classic',
             /** @type {import('@docusaurus/preset-classic').Options} */
             ({
-                docs: {
+                /*docs: {
                     sidebarPath: './sidebars.js',
 
                 },
-                /*blog: {
-                  showReadingTime: true,
-                  feedOptions: {
-                    type: ['rss', 'atom'],
-                    xslt: true,
-                  },
+                blog: {
+                    showReadingTime: true,
+                    feedOptions: {
+                        type: ['rss', 'atom'],
+                        xslt: true,
+                    },
 
-                  // Useful options to enforce blogging best practices
-                  onInlineTags: 'warn',
-                  onInlineAuthors: 'warn',
-                  onUntruncatedBlogPosts: 'warn',
-                },
-                theme: {
-                  customCss: './src/css/custom.css',
+                    // Useful options to enforce blogging best practices
+                    onInlineTags: 'warn',
+                    onInlineAuthors: 'warn',
+                    onUntruncatedBlogPosts: 'warn',
                 },*/
+                theme: {
+                    customCss: './src/css/custom.css',
+                },
             }),
         ],
     ],
 
     themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+
         ({
             // Replace with your project's social card
             //image: 'img/docusaurus-social-card.jpg',
-            /*navbar: {
-              title: 'My Site',
-              logo: {
-                alt: 'My Site Logo',
-                src: 'img/logo.svg',
-              },
-              items: [
-                {
-                  type: 'docSidebar',
-                  sidebarId: 'tutorialSidebar',
-                  position: 'left',
-                  label: 'Tutorial',
-                },
-                {to: '/blog', label: 'Blog', position: 'left'},
-                {
-                  href: 'https://github.com/facebook/docusaurus',
-                  label: 'GitHub',
-                  position: 'right',
-                },
-              ],
+            navbar: {
+                title: 'Полезные ссылки',
+                // logo: {
+                //     alt: 'My Site Logo',
+                //     src: 'img/android-chrome-192x192.png',
+                // },
+                items: [
+                    {
+                        label: 'Ведомости',
+                        href: '/table-grades',
+                    },
+                    {
+                        label: 'Правила оценивания',
+                        href: '/point-distribution',
+                    },
+                ],
             },
             footer: {
-              style: 'dark',
-              links: [
-                {
-                  title: 'Docs',
-                  items: [
+                style: 'dark',
+                links: [
                     {
-                      label: 'Tutorial',
-                      to: '/docs/intro',
-                    },
-                  ],
-                },
-                {
-                  title: 'Community',
-                  items: [
-                    {
-                      label: 'Stack Overflow',
-                      href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-                    },
-                    {
-                      label: 'Discord',
-                      href: 'https://discordapp.com/invite/docusaurus',
+                        title: 'Сайты ИТМО',
+                        items: [
+                            {
+                                label: 'my.itmo',
+                                href: 'https://my.itmo.ru',
+                            },
+                            {
+                                label: 'ИСУ',
+                                href: 'https://isu.ifmo.ru',
+                            },
+                            {
+                                label: 'BARS',
+                                href: 'https://bars.itmo.ru',
+                            },
+                        ],
                     },
                     {
-                      label: 'Twitter',
-                      href: 'https://twitter.com/docusaurus',
+                        title: 'Community',
+                        items: [
+                            {
+                                label: 'Stack Overflow',
+                                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                            },
+                            {
+                                label: 'Discord',
+                                href: 'https://discordapp.com/invite/docusaurus',
+                            },
+                            {
+                                label: 'Twitter',
+                                href: 'https://twitter.com/docusaurus',
+                            },
+                        ],
                     },
-                  ],
-                },
-                {
-                  title: 'More',
-                  items: [
                     {
-                      label: 'Blog',
-                      to: '/blog',
+                        title: 'Контакты',
+                        items: [
+                            {
+                                label: '@nawinds',
+                                href: 'https://t.me/nawinds',
+                            },
+                            {
+                                label: '@Ruzix',
+                                href: 'https://t.me/Ruzix',
+                            },
+                            {
+                                label: 'Исходный код',
+                                href: 'https://github.com/nawinds/m3104-links',
+                            },
+                        ],
                     },
-                    {
-                      label: 'GitHub',
-                      href: 'https://github.com/facebook/docusaurus',
-                    },
-                  ],
-                },
-              ],
-              copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-            },*/
+                ],
+            },
             prism: {
                 theme: prismThemes.github,
                 darkTheme: prismThemes.dracula,

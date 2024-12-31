@@ -82,8 +82,7 @@ window.onload = () => {
 
                 let deadlinesElement2 = document.createElement('div');
 
-                deadlinesElement2.style = "background-color: rgb(0, 191, 255, 0.15); padding: 20px; " +
-                    "border-radius: 15px; margin-bottom: 10px;";
+                deadlinesElement2.id = "deadlinesBlock";
                 let deadlinesElement2h2 = document.createElement('h2');
                 deadlinesElement2h2.id = "подождите-а-что-это-у-вас-на-носу";
                 deadlinesElement2h2.innerHTML = deadlinesElement.innerHTML;
