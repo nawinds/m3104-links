@@ -49,6 +49,7 @@ const formatDeadline = (deadline) => {
 
 const Deadlines = () => {
     const [deadlines, setDeadlines] = useState([]);
+    const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
@@ -59,11 +60,17 @@ const Deadlines = () => {
                 setDeadlines(sortedDeadlines);
             } catch (err) {
                 setError(err.message);
+            } finally {
+                setLoading(false);
             }
         };
 
         loadDeadlines();
     }, []);
+
+    if (loading) {
+        return <p>Загрузка дедлайнов...</p>;
+    }
 
     if (error) {
         return <p>Error: {error}</p>;
@@ -71,7 +78,7 @@ const Deadlines = () => {
 
     return (
         <div id="deadlinesBlock" style={{ marginBottom: '20px' }}>
-            <h2>Подождите, а что это у вас на носу?</h2>
+            <h2>Расписание экзаменов</h2>
             {deadlines.length === 0 ? (
                 <p>Нет предстоящих дедлайнов.</p>
             ) : (
