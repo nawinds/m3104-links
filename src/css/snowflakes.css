@@ -1,0 +1,52 @@
+/* Примерный цвет для снежинок: голубой (#add8e6) */
+.snowflake {
+  position: absolute;
+  top: -10px;
+  color: #38a7ec;
+  font-size: 24px;
+  pointer-events: none; /* чтобы нельзя было кликать по снежинкам */
+  opacity: 1;
+  animation: snowfall linear infinite, fadeout ease-in-out infinite;
+  /* временно поставим длительность 10s, вы можете отрегулировать под себя */
+  animation-duration: 30s, 30s;
+}
+
+/* Плавное падение вниз */
+@keyframes snowfall {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100vh); /* "пролет" по вертикали целого экрана */
+  }
+}
+
+/* Исчезновение к середине экрана */
+@keyframes fadeout {
+  /* до середины экрана: снежинка видна */
+  0%,
+  30% {
+    opacity: 0.4;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  /* начиная примерно с 50% пути – снежинка тает и пропадает */
+  90% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Контейнер для снежинок на заднем плане */
+#snowflake-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* чтобы снежинки не прокручивались со страницей */
+  z-index: -1;      /* чтобы контейнер был "за" основным контентом */
+}
