@@ -1861,7 +1861,7 @@
     "@docusaurus/theme-search-algolia" "3.6.3"
     "@docusaurus/types" "3.6.3"
 
-"@docusaurus/theme-classic@3.6.3":
+"@docusaurus/theme-classic@^3.6.3", "@docusaurus/theme-classic@3.6.3":
   version "3.6.3"
   resolved "https://registry.npmjs.org/@docusaurus/theme-classic/-/theme-classic-3.6.3.tgz"
   integrity sha512-1RRLK1tSArI2c00qugWYO3jRocjOZwGF1mBzPPylDVRwWCS/rnWWR91ChdbbaxIupRJ+hX8ZBYrwr5bbU0oztQ==
