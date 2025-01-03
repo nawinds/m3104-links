@@ -66,14 +66,20 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 
         ({
-            // Replace with your project's social card
-            //image: 'img/docusaurus-social-card.jpg',
+            // announcementBar: {
+            //     id: 'support_us',
+            //     content:
+            //         'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
+            //     backgroundColor: '#000000',
+            //     textColor: '#091E42',
+            //     isCloseable: false,
+            // },
+            colorMode: {
+                defaultMode: 'dark',
+                respectPrefersColorScheme: false,
+            },
             navbar: {
                 title: 'Полезные ссылки',
-                // logo: {
-                //     alt: 'My Site Logo',
-                //     src: 'img/android-chrome-192x192.png',
-                // },
                 items: [
                     {
                         label: 'Ведомости',
@@ -82,6 +88,17 @@ const config = {
                     {
                         label: 'Правила оценивания',
                         href: '/point-distribution',
+                    },
+                    {
+                        type: 'dropdown',
+                        label: 'Архив',
+                        position: 'left',
+                        items: [
+                            {
+                                label: 'Семестр 1',
+                                href: '/archive/semester/1',
+                            }
+                        ],
                     },
                 ],
             },
@@ -109,16 +126,19 @@ const config = {
                         title: 'Контакты',
                         items: [
                             {
-                                label: '@nawinds',
-                                href: 'https://t.me/nawinds',
+                                html: "Email: <a href='mailto:m3104@nawinds.dev'>m3104@nawinds.dev</a>",
                             },
                             {
-                                label: '@Ruzix',
-                                href: 'https://t.me/Ruzix',
+                                html: 'GitHub: <a href="https://github.com/nawinds/m3104-links">Исходный код</a>',
                             },
+                        ],
+                    },
+                    {
+                        title: 'Пожертвования',
+                        items: [
                             {
-                                label: 'Исходный код',
-                                href: 'https://github.com/nawinds/m3104-links',
+                                label: 'Задонатить',
+                                href: 'https://www.tbank.ru/cf/4tI8tyioxMb',
                             },
                         ],
                     },
