@@ -11,6 +11,7 @@ const config = {
     title: 'M3104',
     noIndex: true,
     favicon: 'img/favicon.ico',
+    trailingSlash: false,
 
     // Set the production url of your site here
     url: 'https://m3104.nawinds.dev',
@@ -33,6 +34,17 @@ const config = {
         defaultLocale: 'ru',
         locales: ['ru'],
     },
+
+    headTags: [
+        {
+            tagName: 'meta',
+            attributes: {
+                name: 'robots',
+                content: 'nofollow',
+            },
+        },
+    ],
+
 
     presets: [
         [
@@ -149,7 +161,7 @@ const config = {
                 darkTheme: prismThemes.dracula,
             },
         }),
-    scripts: ['/ya_metrika.js', '/deadlines.js'],
+    scripts: ['/ya_metrika.js'],
     plugins: [
         [
             '@docusaurus/plugin-pwa',

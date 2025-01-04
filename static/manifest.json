@@ -1,8 +1,8 @@
 {
   "name": "Ссылки M3104",
   "short_name": "M3104",
-  "theme_color": "#fd9f4f",
-  "background_color": "#3d1a55",
+  "theme_color": "#3d1a55",
+  "background_color": "#17111c",
   "display": "standalone",
   "start_url": "/",
   "scope": "/",
