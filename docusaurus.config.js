@@ -9,7 +9,6 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: 'M3104',
-    noIndex: true,
     favicon: 'img/favicon.ico',
     trailingSlash: false,
 
