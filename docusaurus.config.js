@@ -111,6 +111,14 @@ const config = {
                             }
                         ],
                     },
+                    // {
+                    //     type: 'html',
+                    //     position: 'right',
+                    //     value: '<button class="clean-btn" style="width: 32px; height: 32px;">' +
+                    //         '<img src="/img/help.svg" alt="Help" ' +
+                    //         'style="cursor: pointer;" title="Help" ' +
+                    //         'data-help-popup="" /></button>',
+                    // },
                 ],
             },
             footer: {

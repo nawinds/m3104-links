@@ -1,6 +1,8 @@
 import React from 'react';
 import OriginalLayout from '@theme-original/Layout';
 import SnowflakesBackground from '../../components/SnowflakesBackground';
+import AnchorShortcuts from "../../components/AnchorShortcuts";
+import HelpPopup from '../../components/HelpPopup';
 
 function newYearTime() {
 
@@ -38,20 +40,26 @@ export default function Layout(props) {
         return (
             <>
                 <SnowflakesBackground/>
+                <AnchorShortcuts/>
                 <OriginalLayout {...props} />
+                <HelpPopup />
             </>
         );
     } else if (foolsDayTime()) {
         return (
             <>
                 <SnowflakesBackground characters="🤡" minSize={12}/>
+                <AnchorShortcuts/>
                 <OriginalLayout {...props} />
+                <HelpPopup />
             </>
         );
     } else {
         return (
             <>
+                <AnchorShortcuts/>
                 <OriginalLayout {...props} />
+                <HelpPopup />
             </>
         );
     }
