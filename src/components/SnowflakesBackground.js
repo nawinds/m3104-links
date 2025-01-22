@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import '../css/snowflakes.css';
 
-export default function SnowflakesBackground() {
+export default function SnowflakesBackground({characters = '❄', minSize = 5}) {
     // Количество снежинок на ваш вкус
     const numberOfSnowflakes = 50;
 
@@ -12,7 +12,9 @@ export default function SnowflakesBackground() {
         for (let i = 0; i < numberOfSnowflakes; i++) {
             const snowflake = document.createElement('div');
             snowflake.className = 'snowflake';
-            snowflake.textContent = '❄' //'•' //'❄'; // Можно заменить на любой символ или даже иконку
+
+            snowflake.textContent = characters[Math.floor(Math.random() * characters.length)];
+            // '•' //'❄'; // Можно заменить на любой символ или даже иконку
 
             // Случайная позиция по горизонтали (0% - 100%)
             snowflake.style.left = Math.random() * 100 + '%';
@@ -25,7 +27,7 @@ export default function SnowflakesBackground() {
 
 
             // Случайный размер шрифта снежинки
-            const size = 5 + Math.random() * 10; // от 10px до 20px
+            const size = minSize + Math.random() * 10; // от 10px до 20px
             snowflake.style.fontSize = size + 'px';
 
             container.appendChild(snowflake);
