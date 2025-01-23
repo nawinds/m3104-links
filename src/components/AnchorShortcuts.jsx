@@ -16,6 +16,13 @@ const AnchorShortcuts = () => {
         h: {type: "url", target: "/"},
         v: {type: "url", target: "/table-grades"},
         p: {type: "url", target: "/point-distribution"},
+
+        // service shortcuts
+        ',': {type: "url", target: "https://github.com/nawinds/m3104-links/edit/master/static/api-deadlines"},
+        'б': {type: "url", target: "https://github.com/nawinds/m3104-links/edit/master/static/api-deadlines"},
+
+        '.': {type: "url", target: "https://github.com/nawinds/m3104-links/edit/master/src/pages/index.mdx"},
+        'ю': {type: "url", target: "https://github.com/nawinds/m3104-links/edit/master/src/pages/index.mdx"},
     };
 
     const russianKeyboardMap = {
