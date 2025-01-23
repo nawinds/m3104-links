@@ -145,19 +145,32 @@ const config = {
                         title: 'Контакты',
                         items: [
                             {
-                                html: "Email: <a href='mailto:m3104@nawinds.dev'>m3104@nawinds.dev</a>",
+                                label: 'm3104@nawinds.dev',
+                                href: 'mailto:m3104@nawinds.dev',
                             },
                             {
-                                html: 'GitHub: <a href="https://github.com/nawinds/m3104-links">Исходный код</a>',
+                                label: 'Исходный код',
+                                href: 'https://github.com/nawinds/m3104-links',
+                            },
+                            {
+                                label: 'Внесли вклад',
+                                href: 'https://github.com/nawinds/m3104-links/graphs/contributors',
                             },
                         ],
                     },
                     {
-                        title: 'Пожертвования',
+                        title: 'О сайте',
                         items: [
+                            {
+                                label: 'Отзывы',
+                                href: 'https://yandex.ru/maps/org/230826642884/reviews',
+                            },
                             {
                                 label: 'Задонатить',
                                 href: 'https://www.tbank.ru/cf/4tI8tyioxMb',
+                            },
+                            {
+                                html: '<a href="#" data-help-popup="">Горячие клавиши</a>',
                             },
                         ],
                     },

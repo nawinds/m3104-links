@@ -58,6 +58,7 @@
 [data-theme='dark'] {
     --ifm-background-color: #17111c !important;
     --ifm-background-surface-color: #3d1a55 !important;
+    --ifm-color-emphasis-200: #4a1f67 !important;
 
     .footer--dark {
         --ifm-footer-background-color: #021201 !important;
