@@ -16,6 +16,26 @@ const compareDeadlines = (a, b) => {
     return aTime - bTime;
 };
 
+function formatUnixTimeIntoGCalTime(unixTimeDeadline) {
+    const date = new Date(unixTimeDeadline);
+
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    const hours = String(date.getHours()).padStart(2, '0');
+    const minutes = String(date.getMinutes()).padStart(2, '0');
+    const seconds = String(date.getSeconds()).padStart(2, '0');
+
+    // Get timezone offset in ±HHMM format
+    const timeZoneOffset = -date.getTimezoneOffset();
+    const sign = timeZoneOffset >= 0 ? '+' : '-';
+    const absOffset = Math.abs(timeZoneOffset);
+    const offsetHours = String(Math.floor(absOffset / 60)).padStart(2, '0');
+    const offsetMinutes = String(absOffset % 60).padStart(2, '0');
+
+    return `${year}${month}${day}T${hours}${minutes}${seconds}${sign}${offsetHours}${offsetMinutes}`;
+}
+
 const formatDeadline = (deadline) => {
     const unixTimeDeadline = Date.parse(deadline.time);
     const unixTimeNow = Date.now();
@@ -31,7 +51,15 @@ const formatDeadline = (deadline) => {
     const deltaHoursSDays = deltaHours - 24 * Math.floor(deltaDays);
     const deltaMinutesSDays = deltaMinutes - 60 * Math.floor(deltaHours);
 
-    let text = `<b>${deadline.name}</b> &#8212; `;
+    let deadlineName = deadline.name.replace("[Тест]", "📚").replace("[тест]", "📚");
+
+    const formattedTime = formatUnixTimeIntoGCalTime(unixTimeDeadline);
+    const description = "Дедлайн добавлен с сайта m3104.nawinds.dev";
+    const link = "https://calendar.google.com/calendar/u/0/r/eventedit?text=" +
+        encodeURI(deadlineName) + " + &dates=" + formattedTime + "/" +
+    formattedTime + "&details=" + encodeURI(description) + "&color=6";
+
+    let text = `<b>${deadlineName}</b> &#8212; <a href="` + link + `" target="_blank" style="text-decoration: none; color: inherit;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">`;
 
     if (deltaDays < 1) {
         text += `${Math.floor(deltaHoursSDays)}ч ${Math.floor(deltaMinutesSDays)}м`;
@@ -42,7 +70,7 @@ const formatDeadline = (deadline) => {
     }
 
     const options = { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', weekday: 'short' };
-    text += ` (${new Date(unixTimeDeadline).toLocaleDateString('ru-RU', options)})`;
+    text += ` (${new Date(unixTimeDeadline).toLocaleDateString('ru-RU', options)}) </a>`;
 
     return text;
 };
@@ -78,7 +106,7 @@ const Deadlines = () => {
 
     return (
         <div id="deadlinesBlock" style={{ marginBottom: '20px' }}>
-            <h2>Расписание экзаменов</h2>
+            <h2>Дедлайны</h2>
             {deadlines.length === 0 ? (
                 <p>Нет предстоящих дедлайнов.</p>
             ) : (
