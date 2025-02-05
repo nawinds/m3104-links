@@ -38,16 +38,17 @@ const HelpPopup = () => {
         <button className="close-icon" onClick={closePopup} aria-label="Close">&times;</button>
         <h3>Горячие клавиши</h3>
         <ul>
-          <li><b><code>M</code>, <code>L</code>:</b> Матан и линал</li>
-          <li><b><code>D</code>:</b> Дискретная математика</li>
-          <li><b><code>A</code>:</b> Алгоритмы</li>
-          <li><b><code>O</code>:</b> ОП</li>
-          <li><b><code>I</code>:</b> ИСРПО</li>
+          <li><b><code>M</code>, <code>М (рус)</code>:</b> Матан</li>
+          <li><b><code>S</code>, <code>С (рус)</code>:</b> Спецразделы</li>
+          <li><b><code>D</code>, <code>Д (рус)</code>:</b> Дискретная математика</li>
+          <li><b><code>A</code>, <code>А (рус)</code>:</b> Алгоритмы</li>
+          <li><b><code>O</code>, <code>О (рус)</code>:</b> ОП</li>
+          <li><b><code>E</code>, <code>Э (рус)</code>:</b> Аппаратное обеспечение вычислительных систем</li>
           <hr/>
           <li><b><code>V</code>:</b> Ведомости</li>
-          <li><b><code>P</code>:</b> Правила оценивания</li>
-          <li><b><code>H</code>:</b> Домашняя страница</li>
-          <li><b><code>B</code>:</b> Назад (браузерное действие)</li>
+          <li><b><code>P</code>, <code>П (рус)</code>:</b> Правила оценивания</li>
+          <li><b><code>H</code>, <code>Г (рус)</code>:</b> Домашняя страница</li>
+          <li><b><code>B</code>, <code>Н (рус)</code>:</b> Назад (браузерное действие)</li>
         </ul>
       </div>
     </div>

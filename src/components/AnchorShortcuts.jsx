@@ -4,12 +4,19 @@ const AnchorShortcuts = () => {
     // Map of single-letter shortcuts to anchor IDs
     const keyToActionMap = {
         // Anchor shortcuts
-        m: {type: "anchor", target: "матан-и-линал"},
-        l: {type: "anchor", target: "матан-и-линал"},
+        m: {type: "anchor", target: "матан"},
+        s: {type: "anchor", target: "спецразделы-высшей-математики"},
         d: {type: "anchor", target: "дискретная-математика"},
         a: {type: "anchor", target: "алгоритмы"},
         o: {type: "anchor", target: "основы-программирования"},
-        i: {type: "anchor", target: "инструментальные-средства-разработки-по"},
+        e: {type: "anchor", target: "аппаратное-обеспечение-вычислительных-систем"},
+
+        "м": {type: "anchor", target: "матан"}, // м
+        c: {type: "anchor", target: "спецразделы-высшей-математики"}, // с
+        l: {type: "anchor", target: "дискретная-математика"}, // д
+        f: {type: "anchor", target: "алгоритмы"}, // а
+        j: {type: "anchor", target: "основы-программирования"}, // о
+        ",": {type: "anchor", target: "аппаратное-обеспечение-вычислительных-систем"}, // э - эвм
 
         // URL shortcuts
         b: {type: "url", target: "javascript:history.back()"},
@@ -17,12 +24,14 @@ const AnchorShortcuts = () => {
         v: {type: "url", target: "/table-grades"},
         p: {type: "url", target: "/point-distribution"},
 
-        // service shortcuts
-        ',': {type: "url", target: "https://github.com/nawinds/m3104-links/edit/master/static/api-deadlines"},
-        'б': {type: "url", target: "https://github.com/nawinds/m3104-links/edit/master/static/api-deadlines"},
+        y: {type: "url", target: "javascript:history.back()"}, // н - назад
+        u: {type: "url", target: "/"},   // г - главная
+        g: {type: "url", target: "/point-distribution"}, // п - правила оценивания
 
-        '.': {type: "url", target: "https://github.com/nawinds/m3104-links/edit/master/src/pages/index.mdx"},
-        'ю': {type: "url", target: "https://github.com/nawinds/m3104-links/edit/master/src/pages/index.mdx"},
+        // service shortcuts
+        1: {type: "url", target: "https://github.com/nawinds/m3104-links/edit/master/src/pages/index.mdx"},
+        2: {type: "url", target: "https://github.com/nawinds/m3104-links/edit/master/static/api-deadlines"},
+        3: {type: "url", target: "https://github.com/nawinds/m3104-links/edit/master/src/pages/lecture-recordings.mdx"},
     };
 
     const russianKeyboardMap = {
@@ -52,6 +61,7 @@ const AnchorShortcuts = () => {
         b: "и",
         n: "т",
         m: "ь",
+        ',': "э",
     };
 
     // Automatically extend the keyToActionMap with Russian equivalents

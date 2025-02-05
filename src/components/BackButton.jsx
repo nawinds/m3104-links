@@ -1,10 +1,10 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 
-export default function BackButton() {
+export default function BackButton({title = "На главную", to = "/"}) {
     return (
         <Link
-            to="/"
+            to={to}
             style={{
                 padding: '5px 12px',
                 fontSize: '15px',
@@ -19,7 +19,7 @@ export default function BackButton() {
             }}
             className="back-to-home-button"
         >
-            ← На главную
+            ← {title}
         </Link>
     );
 }
