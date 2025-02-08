@@ -43,7 +43,7 @@ const HelpPopup = () => {
           <li><b><code>D</code>, <code>Д (рус)</code>:</b> Дискретная математика</li>
           <li><b><code>A</code>, <code>А (рус)</code>:</b> Алгоритмы</li>
           <li><b><code>O</code>, <code>О (рус)</code>:</b> ОП</li>
-          <li><b><code>E</code>, <code>Э (рус)</code>:</b> Аппаратное обеспечение вычислительных систем</li>
+          <li><b><code>E</code>, <code>Э (рус)</code>:</b> Архитектура ЭВМ</li>
           <hr/>
           <li><b><code>V</code>:</b> Ведомости</li>
           <li><b><code>P</code>, <code>П (рус)</code>:</b> Правила оценивания</li>

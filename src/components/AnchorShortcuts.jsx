@@ -9,14 +9,14 @@ const AnchorShortcuts = () => {
         d: {type: "anchor", target: "дискретная-математика"},
         a: {type: "anchor", target: "алгоритмы"},
         o: {type: "anchor", target: "основы-программирования"},
-        e: {type: "anchor", target: "аппаратное-обеспечение-вычислительных-систем"},
+        e: {type: "anchor", target: "архитектура-эвм"},
 
         "м": {type: "anchor", target: "матан"}, // м
         c: {type: "anchor", target: "спецразделы-высшей-математики"}, // с
         l: {type: "anchor", target: "дискретная-математика"}, // д
         f: {type: "anchor", target: "алгоритмы"}, // а
         j: {type: "anchor", target: "основы-программирования"}, // о
-        ",": {type: "anchor", target: "аппаратное-обеспечение-вычислительных-систем"}, // э - эвм
+        ",": {type: "anchor", target: "архитектура-эвм"}, // э - эвм
 
         // URL shortcuts
         b: {type: "url", target: "javascript:history.back()"},
