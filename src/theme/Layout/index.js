@@ -3,7 +3,8 @@ import OriginalLayout from '@theme-original/Layout';
 import SnowflakesBackground from '../../components/SnowflakesBackground';
 import AnchorShortcuts from "../../components/AnchorShortcuts";
 import HelpPopup from '../../components/HelpPopup';
-import ThemeColorMeta from '@site/src/components/ThemeColorMeta';
+import ThemeColorMeta from '../../components/ThemeColorMeta';
+import SwipeableMenu from '../../components/SwipeableMenu';
 
 function newYearTime() {
 
@@ -40,30 +41,42 @@ export default function Layout(props) {
     if (newYearTime()) {
         return (
             <>
-                <ThemeColorMeta />
+                <ThemeColorMeta/>
                 <SnowflakesBackground/>
                 <AnchorShortcuts/>
-                <OriginalLayout {...props} />
-                <HelpPopup />
+                <OriginalLayout {...props}>
+                    <SwipeableMenu>
+                        {props.children}
+                    </SwipeableMenu>
+                </OriginalLayout>
+                <HelpPopup/>
             </>
         );
     } else if (foolsDayTime()) {
         return (
             <>
-                <ThemeColorMeta />
+                <ThemeColorMeta/>
                 <SnowflakesBackground characters="🤡" minSize={12}/>
                 <AnchorShortcuts/>
-                <OriginalLayout {...props} />
-                <HelpPopup />
+                <OriginalLayout {...props}>
+                    <SwipeableMenu>
+                        {props.children}
+                    </SwipeableMenu>
+                </OriginalLayout>
+                <HelpPopup/>
             </>
         );
     } else {
         return (
             <>
-                <ThemeColorMeta />
+                <ThemeColorMeta/>
                 <AnchorShortcuts/>
-                <OriginalLayout {...props} />
-                <HelpPopup />
+                <OriginalLayout {...props}>
+                    <SwipeableMenu>
+                        {props.children}
+                    </SwipeableMenu>
+                </OriginalLayout>
+                <HelpPopup/>
             </>
         );
     }
