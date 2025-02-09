@@ -87,7 +87,7 @@ const config = {
             // },
             colorMode: {
                 defaultMode: 'dark',
-                respectPrefersColorScheme: false,
+                respectPrefersColorScheme: true,
             },
             navbar: {
                 title: 'Полезные ссылки',
@@ -206,7 +206,7 @@ const config = {
                     {
                         tagName: 'meta',
                         name: 'theme-color',
-                        content: 'rgb(255, 255, 255)',
+                        content: '#3d1a55',
                     },
                 ],
             },

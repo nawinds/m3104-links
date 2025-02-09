@@ -3,6 +3,7 @@ import OriginalLayout from '@theme-original/Layout';
 import SnowflakesBackground from '../../components/SnowflakesBackground';
 import AnchorShortcuts from "../../components/AnchorShortcuts";
 import HelpPopup from '../../components/HelpPopup';
+import ThemeColorMeta from '@site/src/components/ThemeColorMeta';
 
 function newYearTime() {
 
@@ -39,6 +40,7 @@ export default function Layout(props) {
     if (newYearTime()) {
         return (
             <>
+                <ThemeColorMeta />
                 <SnowflakesBackground/>
                 <AnchorShortcuts/>
                 <OriginalLayout {...props} />
@@ -48,6 +50,7 @@ export default function Layout(props) {
     } else if (foolsDayTime()) {
         return (
             <>
+                <ThemeColorMeta />
                 <SnowflakesBackground characters="🤡" minSize={12}/>
                 <AnchorShortcuts/>
                 <OriginalLayout {...props} />
@@ -57,6 +60,7 @@ export default function Layout(props) {
     } else {
         return (
             <>
+                <ThemeColorMeta />
                 <AnchorShortcuts/>
                 <OriginalLayout {...props} />
                 <HelpPopup />
