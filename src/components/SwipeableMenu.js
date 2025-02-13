@@ -1,6 +1,4 @@
-import React from 'react';
-import { useSwipeable } from 'react-swipeable';
-import { useThemeConfig } from '@docusaurus/theme-common';
+import React, { useEffect, useRef } from 'react';
 import { useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
@@ -10,33 +8,41 @@ const SwipeableMenu = ({ children }) => {
   return (
     <BrowserOnly fallback={<>{children}</>}>
       {() => {
-        const isMobile = () => /Mobi|Android/i.test(navigator.userAgent);
         const { toggle, shown } = useNavbarMobileSidebar();
+        const swipeRef = useRef(null);
 
-        // Обрабатываем свайпы глобально, чтобы работало поверх навбара
-        const handlers = useSwipeable({
-          onSwipedLeft: (eventData) => {
-            eventData.event.stopPropagation();
-            if (shown && Math.abs(eventData.deltaX) > SWIPE_THRESHOLD) {
-              toggle(); // Закрываем навбар
-            }
-          },
-          onSwipedRight: (eventData) => {
-            eventData.event.stopPropagation();
-            if (!shown && Math.abs(eventData.deltaX) > SWIPE_THRESHOLD) {
-              toggle(); // Открываем навбар
-            }
-          },
-          trackTouch: true, // Включаем обработку свайпов на мобильных устройствах
-          trackMouse: false, // Отключаем поддержку свайпов мышью
-          preventScrollOnSwipe: true, // Блокируем скролл во время свайпа
-        });
+        useEffect(() => {
+          const handleTouchStart = (event) => {
+            swipeRef.current = event.touches[0].clientX;
+          };
 
-        return (
-          <div {...handlers} style={{ width: '100%', height: '100vh' }}>
-            {children}
-          </div>
-        );
+          const handleTouchMove = (event) => {
+            if (!swipeRef.current) return;
+
+            // Игнорируем свайпы внутри навбара
+            if (event.target.closest('.navbar')) return;
+
+            const deltaX = event.touches[0].clientX - swipeRef.current;
+
+            if (shown && deltaX < -SWIPE_THRESHOLD) {
+              toggle(); // Закрываем навбар свайпом влево
+            } else if (!shown && deltaX > SWIPE_THRESHOLD) {
+              toggle(); // Открываем навбар свайпом вправо
+            }
+
+            swipeRef.current = null; // Сбрасываем значение
+          };
+
+          window.addEventListener('touchstart', handleTouchStart, { passive: false });
+          window.addEventListener('touchmove', handleTouchMove, { passive: false });
+
+          return () => {
+            window.removeEventListener('touchstart', handleTouchStart);
+            window.removeEventListener('touchmove', handleTouchMove);
+          };
+        }, [shown]);
+
+        return <div>{children}</div>;
       }}
     </BrowserOnly>
   );
