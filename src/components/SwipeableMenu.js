@@ -4,7 +4,7 @@ import { useThemeConfig } from '@docusaurus/theme-common';
 import { useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
-const SWIPE_THRESHOLD = 50; // Минимальная длина свайпа для срабатывания
+const SWIPE_THRESHOLD = 150; // Минимальная длина свайпа для срабатывания
 
 const SwipeableMenu = ({ children }) => {
   return (
@@ -17,13 +17,15 @@ const SwipeableMenu = ({ children }) => {
         const handlers = useSwipeable(
           isMobile()
             ? {
-                onSwipedLeft: ({ deltaX }) => {
-                  if (shown && Math.abs(deltaX) > SWIPE_THRESHOLD) {
+                onSwipedLeft: (eventData) => {
+                  eventData.event.stopPropagation();
+                  if (shown && Math.abs(eventData.deltaX) > SWIPE_THRESHOLD) {
                     toggle();
                   }
                 },
-                onSwipedRight: ({ deltaX }) => {
-                  if (!shown && Math.abs(deltaX) > SWIPE_THRESHOLD) {
+                onSwipedRight: (eventData) => {
+                  eventData.event.stopPropagation();
+                  if (!shown && Math.abs(eventData.deltaX) > SWIPE_THRESHOLD) {
                     toggle();
                   }
                 },
