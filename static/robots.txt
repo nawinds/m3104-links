@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /maths
+Disallow: /deadlines-editing-instructions
+
+Sitemap: https://m3104.nawinds.dev/sitemap.xml

@@ -39,7 +39,7 @@ const config = {
             tagName: 'meta',
             attributes: {
                 name: 'robots',
-                content: 'nofollow',
+                content: 'nofollow, follow',
             },
         },
     ],
