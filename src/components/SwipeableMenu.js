@@ -14,35 +14,31 @@ const SwipeableMenu = ({ children }) => {
         const { toggle, shown } = useNavbarMobileSidebar();
         const swipeRef = useRef(null);
 
-        const handleTouchStart = (event) => {
-          swipeRef.current = event.touches[0].clientX;
-        };
-
-        const handleTouchMove = (event) => {
-          if (!swipeRef.current) return;
-
-          const deltaX = event.touches[0].clientX - swipeRef.current;
-
-          if (shown && deltaX < -SWIPE_THRESHOLD) {
-            toggle(); // Закрываем навбар свайпом влево
-          } else if (!shown && deltaX > SWIPE_THRESHOLD) {
-            toggle(); // Открываем навбар свайпом вправо
-          }
-
-          swipeRef.current = null; // Сбрасываем значение
-        };
-
         useEffect(() => {
-          const body = document.body;
+          const handleTouchStart = (event) => {
+            swipeRef.current = event.touches[0].clientX;
+          };
 
-          if (isMobile()) {
-            body.addEventListener('touchstart', handleTouchStart);
-            body.addEventListener('touchmove', handleTouchMove);
-          }
+          const handleTouchMove = (event) => {
+            if (!swipeRef.current) return;
+
+            const deltaX = event.touches[0].clientX - swipeRef.current;
+
+            if (shown && deltaX < -SWIPE_THRESHOLD) {
+              toggle(); // Закрываем навбар свайпом влево
+            } else if (!shown && deltaX > SWIPE_THRESHOLD) {
+              toggle(); // Открываем навбар свайпом вправо
+            }
+
+            swipeRef.current = null; // Сбрасываем значение
+          };
+
+          document.body.addEventListener('touchstart', handleTouchStart);
+          document.body.addEventListener('touchmove', handleTouchMove);
 
           return () => {
-            body.removeEventListener('touchstart', handleTouchStart);
-            body.removeEventListener('touchmove', handleTouchMove);
+            document.body.removeEventListener('touchstart', handleTouchStart);
+            document.body.removeEventListener('touchmove', handleTouchMove);
           };
         }, [shown]);
 
