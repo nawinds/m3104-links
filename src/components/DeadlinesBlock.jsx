@@ -11,40 +11,31 @@ const fetchDeadlines = async () => {
 };
 
 const compareDeadlines = (a, b) => {
-    const aTime = Date.parse(a.time);
-    const bTime = Date.parse(b.time);
-    return aTime - bTime;
+    return Date.parse(a.time) - Date.parse(b.time);
 };
 
-function formatUnixTimeIntoGCalTime(unixTimeDeadline) {
+const formatUnixTimeIntoGCalTime = (unixTimeDeadline) => {
     const date = new Date(unixTimeDeadline);
-
     const year = date.getFullYear();
     const month = String(date.getMonth() + 1).padStart(2, '0');
     const day = String(date.getDate()).padStart(2, '0');
     const hours = String(date.getHours()).padStart(2, '0');
     const minutes = String(date.getMinutes()).padStart(2, '0');
     const seconds = String(date.getSeconds()).padStart(2, '0');
-
-    // Get timezone offset in ±HHMM format
     const timeZoneOffset = -date.getTimezoneOffset();
     const sign = timeZoneOffset >= 0 ? '+' : '-';
-    const absOffset = Math.abs(timeZoneOffset);
-    const offsetHours = String(Math.floor(absOffset / 60)).padStart(2, '0');
-    const offsetMinutes = String(absOffset % 60).padStart(2, '0');
-
+    const offsetHours = String(Math.floor(Math.abs(timeZoneOffset) / 60)).padStart(2, '0');
+    const offsetMinutes = String(Math.abs(timeZoneOffset) % 60).padStart(2, '0');
     return `${year}${month}${day}T${hours}${minutes}${seconds}${sign}${offsetHours}${offsetMinutes}`;
-}
+};
 
 const formatDeadline = (deadline) => {
     const unixTimeDeadline = Date.parse(deadline.time);
     const unixTimeNow = Date.now();
-
     if (unixTimeDeadline <= unixTimeNow) return null;
 
     const delta = unixTimeDeadline - unixTimeNow;
-    const deltaSeconds = delta / 1000;
-    const deltaMinutes = deltaSeconds / 60;
+    const deltaMinutes = delta / 60000;
     const deltaHours = deltaMinutes / 60;
     const deltaDays = deltaHours / 24;
 
@@ -52,15 +43,11 @@ const formatDeadline = (deadline) => {
     const deltaMinutesSDays = deltaMinutes - 60 * Math.floor(deltaHours);
 
     let deadlineName = deadline.name.replace("[Тест]", "📚").replace("[тест]", "📚");
-
     const formattedTime = formatUnixTimeIntoGCalTime(unixTimeDeadline);
     const description = "Дедлайн добавлен с сайта m3104.nawinds.dev";
-    const link = "https://calendar.google.com/calendar/u/0/r/eventedit?text=" +
-        encodeURI(deadlineName) + " + &dates=" + formattedTime + "/" +
-    formattedTime + "&details=" + encodeURI(description) + "&color=6";
+    const link = `https://calendar.google.com/calendar/u/0/r/eventedit?text=${encodeURIComponent(deadlineName)}&dates=${formattedTime}/${formattedTime}&details=${encodeURIComponent(description)}&color=6`;
 
-    let text = `<b>${deadlineName}</b> &#8212; <a href="` + link + `" target="_blank" style="text-decoration: none; color: inherit;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">`;
-
+    let text = `<b>${deadlineName}</b> &#8212; <a href="${link}" target="_blank" style="text-decoration: none; color: inherit;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">`;
     if (deltaDays < 1) {
         text += `${Math.floor(deltaHoursSDays)}ч ${Math.floor(deltaMinutesSDays)}м`;
     } else if (deltaDays < 3) {
@@ -68,10 +55,8 @@ const formatDeadline = (deadline) => {
     } else {
         text += `${Math.floor(deltaDays)} ${Math.floor(deltaDays) === 3 || Math.floor(deltaDays) === 4 ? "дня" : "дней"}`;
     }
-
     const options = { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', weekday: 'short' };
     text += ` (${new Date(unixTimeDeadline).toLocaleDateString('ru-RU', options)}) </a>`;
-
     return text;
 };
 
@@ -93,17 +78,28 @@ const Deadlines = () => {
             }
         };
 
+        const updateInterval = () => {
+            const now = new Date();
+            const nextMinute = new Date(now);
+            nextMinute.setSeconds(0, 0);
+            nextMinute.setMinutes(now.getMinutes() + 1);
+            const delay = nextMinute - now;
+            setTimeout(() => {
+                loadDeadlines();
+                setInterval(loadDeadlines, 60000); // Every 60 seconds
+            }, delay);
+        };
+
         loadDeadlines();
+        updateInterval();
     }, []);
 
     if (loading) {
         return <p>Загрузка дедлайнов...</p>;
     }
-
     if (error) {
         return <p>Error: {error}</p>;
     }
-
     return (
         <div id="deadlinesBlock" style={{ marginBottom: '20px' }}>
             <h2>Дедлайны</h2>
