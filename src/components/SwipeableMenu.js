@@ -4,7 +4,7 @@ import { useThemeConfig } from '@docusaurus/theme-common';
 import { useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
-const SWIPE_THRESHOLD = 150; // Минимальная длина свайпа для срабатывания
+const SWIPE_THRESHOLD = 70; // Минимальная длина свайпа для срабатывания
 
 const SwipeableMenu = ({ children }) => {
   return (
