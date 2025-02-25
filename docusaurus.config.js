@@ -101,6 +101,10 @@ const config = {
                         href: '/point-distribution',
                     },
                     {
+                        label: 'Лекции и конспекты',
+                        href: 'https://t.me/+_GAv-z_aZplhYmEy',
+                    },
+                    {
                         type: 'dropdown',
                         label: 'Архив',
                         position: 'left',
