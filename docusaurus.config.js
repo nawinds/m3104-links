@@ -101,7 +101,7 @@ const config = {
                         href: '/point-distribution',
                     },
                     {
-                        label: 'Лекции и конспекты',
+                        label: 'Лекции',
                         href: 'https://t.me/+_GAv-z_aZplhYmEy',
                     },
                     {
