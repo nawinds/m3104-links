@@ -102,7 +102,7 @@ const config = {
                     },
                     {
                         label: 'Лекции',
-                        href: 'https://t.me/+_GAv-z_aZplhYmEy',
+                        to: 'https://t.me/+_GAv-z_aZplhYmEy',
                     },
                     {
                         type: 'dropdown',
