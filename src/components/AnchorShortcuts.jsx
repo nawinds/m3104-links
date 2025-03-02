@@ -12,12 +12,12 @@ const AnchorShortcuts = () => {
         e: { type: "anchor", target: "архитектура-эвм", url: "https://docs.google.com/spreadsheets/d/1gDMcROqdYmK-Jxq-6HBT_3PSUs0LcioeHvq0ipQ6jXo/edit?usp=sharing" },
 
 
-        "м": { type: "anchor", target: "матан" }, // м
-        c: { type: "anchor", target: "спецразделы-высшей-математики" }, // с
+        "м": { type: "anchor", target: "матан", url: "https://docs.google.com/spreadsheets/d/1p0obShDzJhaiLegIOJoWBs_j-evS7sed502BrUB79KY/edit?gid=0#gid=0" }, // м
+        c: { type: "anchor", target: "спецразделы-высшей-математики", url: "https://docs.google.com/spreadsheets/d/14rIVWggg_t8WSs1KiCkotNIL1hQZ7-F_VRpMttsP4bw/edit?gid=0#gid=0" }, // с
         l: { type: "anchor", target: "дискретная-математика" }, // д
-        f: { type: "anchor", target: "алгоритмы" }, // а
-        j: { type: "anchor", target: "основы-программирования" }, // о
-        ",": { type: "anchor", target: "архитектура-эвм" }, // э - эвм
+        f: { type: "anchor", target: "алгоритмы", url: "https://docs.google.com/spreadsheets/d/1DwOhN0JpuUK3i0Zg4rag6J_vBQYGrzjdNWJ20UCTuI8/edit?gid=1919380163#gid=1919380163&range=A100" }, // а
+        j: { type: "anchor", target: "основы-программирования", url: "https://docs.google.com/spreadsheets/d/1N8QIKIlwHgSR04MoIb5hCiRmkl2qVq6uWO1BkyICapM/edit?gid=1481585521#gid=1481585521" }, // о
+        ",": { type: "anchor", target: "архитектура-эвм", url: "https://docs.google.com/spreadsheets/d/1gDMcROqdYmK-Jxq-6HBT_3PSUs0LcioeHvq0ipQ6jXo/edit?usp=sharing" }, // э - эвм
 
         // URL shortcuts
         b: { type: "url", target: "javascript:history.back()" },
