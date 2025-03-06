@@ -45,9 +45,18 @@ const formatDeadline = (deadline) => {
     let deadlineName = deadline.name.replace("[Тест]", "📚").replace("[тест]", "📚");
     const formattedTime = formatUnixTimeIntoGCalTime(unixTimeDeadline);
     const description = "Дедлайн добавлен с сайта m3104.nawinds.dev";
-    const link = `https://calendar.google.com/calendar/u/0/r/eventedit?text=${encodeURIComponent(deadlineName)}&dates=${formattedTime}/${formattedTime}&details=${encodeURIComponent(description)}&color=6`;
+    const link = deadline.url;
+    const gcalLink = `https://calendar.google.com/calendar/u/0/r/eventedit?text=${encodeURIComponent(deadlineName)}&dates=${formattedTime}/${formattedTime}&details=${encodeURIComponent(description)}&color=6`;
 
-    let text = `<b>${deadlineName}</b> &#8212; <a href="${link}" target="_blank" style="text-decoration: none; color: inherit;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">`;
+    let text = "";
+    if (link) {
+        text += `<b style="padding-left: 5px; border-left: 2px solid rgba(157,128,218,0.5); ackground: rgba(157,128,218,0.3);"><a href=\"${link}\" target=\"_blank\" style=\"text-decoration: none; color: inherit;\" onmouseover=\"this.style.opacity='0.8'\" onmouseout=\"this.style.opacity='1'\">${deadlineName}</a></b>`;
+    } else {
+        text += `<b style="padding-left: 8px;">${deadlineName}</b>`;
+    }
+
+    text += ` &#8212; <a href="${gcalLink}" target="_blank" style="text-decoration: none; color: inherit;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">`;
+
     if (deltaDays < 1) {
         text += `${Math.floor(deltaHoursSDays)}ч ${Math.floor(deltaMinutesSDays)}м`;
     } else if (deltaDays < 3) {
@@ -106,7 +115,7 @@ const Deadlines = () => {
             {deadlines.length === 0 ? (
                 <p>Нет предстоящих дедлайнов.</p>
             ) : (
-                <p dangerouslySetInnerHTML={{ __html: deadlines.map(formatDeadline).filter(Boolean).join('<br>') }} />
+                <p dangerouslySetInnerHTML={{ __html: deadlines.map(formatDeadline).filter(Boolean).join('<br>') }} style={{ lineHeight: "1.8em" }} />
             )}
             <a href="/deadlines-editing-instructions">Добавить дедлайн</a>
         </div>
