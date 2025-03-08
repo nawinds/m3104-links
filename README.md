@@ -74,7 +74,7 @@ If you are using GitHub Pages for hosting, this command is a convenient way to b
 #### Редактирование номера группы и информации о сайте
 
 1. Измените `title` на номер Вашей группы, `url` на актуальный адрес сайта, `organizationName` и `projectName` на юзернейм владельца репозитория и название репозитория на GitHub в файле [docusaurus.config.js](docusaurus.config.js).
-2. Измените номер группы в файле [manifest.json](manifest.json).
+2. Измените номер группы в файле [manifest.json](static/manifest.json).
 3. Измените иконки сайта на свои ([favicon.ico](static/img/favicon.ico), [favicon-32x32.png](static/img/favicon-32x32.png), [android-chrome-192x192.png](static/img/android-chrome-192x192.png), [android-chrome-512x512.png](static/img/android-chrome-512x512.png))
 4. Откройте содержимое всех страниц в директории [pages](src/pages), измените номер группы и другую информацию на актуальную в `title` и `description`, измените ссылки на редактирование страницы внизу .mdx файлов.
 
