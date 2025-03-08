@@ -18,11 +18,13 @@
     },
     {
       "name": "ЭВМ: Лаба 1.2",
-      "time": "16 Mar 2025 23:59:59 GMT+3"
+      "time": "16 Mar 2025 23:59:59 GMT+3",
+      "url": "https://docs.google.com/document/d/11npNSgySpFy2EQb9KF3dYXWM2O29xWnVAciUWs4NbdM/edit?usp=sharing"
     },
     {
       "name": "Спецразделы: РГР №1 «Линейная алгебра»",
-      "time": "23 Mar 2025 23:59:00 GMT+3"
+      "time": "23 Mar 2025 23:59:00 GMT+3",
+      "url": "https://drive.google.com/drive/folders/1fTaoO9hO86yxqwkw3-ArxyYFAG8vYhLz"
     },
     {
       "name": "Алгосы: Лаба №9. Кратчайшие пути",
@@ -30,8 +32,9 @@
       "url": "https://sort-me.org/contest/301"
     },
     {
-      "name": "C++: Лаба №7. Unrolled Linked List",
-      "time": "18 Mar 2025 23:59:00 GMT+3"
+      "name": "C++: Лаба №7. Unrolled List",
+      "time": "18 Mar 2025 23:59:00 GMT+3",
+      "url": "https://classroom.github.com/a/F94lbM9T"
     },
     {
       "name": "[Консультация] Математический анализ",
