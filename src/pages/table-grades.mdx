@@ -3,7 +3,7 @@ title: Таблицы с баллами по предметам
 description: Ссылки на ведомости группы M3104 по каждому предмету
 ---
 
-import BackButton from '../components/BackButton';
+import BackButton from '@site/src/components/BackButton';
 
 <BackButton />
 
@@ -29,10 +29,6 @@ import OpenIcon from '@site/static/img/top-right-arrow-icon.svg';
 </div>
 </a>
 
----
+import EditPageLink from '@site/src/components/EditPageLink';
 
-#### Есть что добавить/исправить? Внесите изменения в Markdown по ссылке ниже!
-
-import EditIcon from '@site/static/img/edit-icon.svg';
-
-**<EditIcon style={{ verticalAlign: 'middle', width: '16px', height: '16px' }} /> [Редактировать страницу](https://github.com/nawinds/m3104-links/edit/master/src/pages/table-grades.mdx)**
+<EditPageLink filePath="/src/pages/table-grades.mdx" />

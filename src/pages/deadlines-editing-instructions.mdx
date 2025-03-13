@@ -3,7 +3,7 @@ title: Добавление дедлайна
 description: Инструкция по добавлению дедлайнов и тестов
 ---
 
-import BackButton from '../components/BackButton';
+import BackButton from '@site/src/components/BackButton';
 
 <BackButton />
 
@@ -28,6 +28,6 @@ import BackButton from '../components/BackButton';
 Следуйте образцу, приводите дедлайны к единой форме, формат `<Предмет>: <Тип работы (лаба, ДЗ, ...)> №<Номер>. <Название работы (если есть)>`.
 Для тестов префикс `[Тест]`.
 
-import EditIcon from '@site/static/img/edit-icon.svg';
+import EditPageLink from '@site/src/components/EditPageLink';
 
-<h3><EditIcon style={{ verticalAlign: 'middle', width: '17px', height: '17px' }} /> [Приступить к редактированию](https://github.com/nawinds/m3104-links/edit/master/static/api-deadlines)</h3>
+<EditPageLink filePath="/static/api-deadlines" linkText="Приступить к редактированию" deadlinesEdit={true} />

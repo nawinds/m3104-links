@@ -5,7 +5,7 @@ description: Полезные ссылки группы M3104 ИТМО
 
 # Полезные ссылки
 
-import Deadlines from '../components/DeadlinesBlock';
+import Deadlines from '@site/src/components/DeadlinesBlock';
 
 <Deadlines />
 
@@ -137,13 +137,9 @@ import Deadlines from '../components/DeadlinesBlock';
 - [На всякий случай](/lgd.pdf)
 - [Самый лучший](https://t.me/PaketichZ)
 
----
+import EditPageLink from '@site/src/components/EditPageLink';
 
-#### Есть что добавить/исправить? Внесите изменения в Markdown по ссылке ниже!
-
-import EditIcon from '@site/static/img/edit-icon.svg';
-
-**<EditIcon style={{ verticalAlign: 'middle', width: '16px', height: '16px' }} /> [Редактировать страницу](https://github.com/nawinds/m3104-links/edit/master/src/pages/index.mdx)**
+<EditPageLink filePath="/src/pages/index.mdx" />
 
 <a href="https://private-net.work" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>
 <div style={{ borderRadius: "7px", border: "solid 1px rgba(255, 255, 255, 0.4)", padding: "12px", opacity: "0.8", borderStyle: "dashed" }}>
