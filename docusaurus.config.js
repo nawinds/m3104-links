@@ -9,6 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: 'M3104',
+    tagline: 'Полезные ссылки группы M3104 ИТМО',
     favicon: 'img/favicon.ico',
     trailingSlash: false,
 
