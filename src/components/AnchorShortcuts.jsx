@@ -1,23 +1,28 @@
 import React, {useEffect} from "react";
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 const AnchorShortcuts = () => {
     // Map of single-letter shortcuts to anchor IDs
+    const {siteConfig} = useDocusaurusContext();
+    const organizationName = siteConfig.organizationName;
+    const repoName = siteConfig.projectName;
+
     const keyToActionMap = {
         // Anchor shortcuts
-        m: { type: "anchor", target: "матан", url: "https://docs.google.com/spreadsheets/d/1p0obShDzJhaiLegIOJoWBs_j-evS7sed502BrUB79KY/edit?gid=0#gid=0" },
-        s: { type: "anchor", target: "спецразделы-высшей-математики", url: "https://docs.google.com/spreadsheets/d/14rIVWggg_t8WSs1KiCkotNIL1hQZ7-F_VRpMttsP4bw/edit?gid=0#gid=0" },
+        m: { type: "anchor", target: "матан", },
+        s: { type: "anchor", target: "спецразделы-высшей-математики" },
         d: { type: "anchor", target: "дискретная-математика" },
-        a: { type: "anchor", target: "алгоритмы", url: "https://docs.google.com/spreadsheets/d/1DwOhN0JpuUK3i0Zg4rag6J_vBQYGrzjdNWJ20UCTuI8/edit?gid=1919380163#gid=1919380163&range=A100" },
-        o: { type: "anchor", target: "основы-программирования", url: "https://docs.google.com/spreadsheets/d/1N8QIKIlwHgSR04MoIb5hCiRmkl2qVq6uWO1BkyICapM/edit?gid=1481585521#gid=1481585521" },
-        e: { type: "anchor", target: "архитектура-эвм", url: "https://docs.google.com/spreadsheets/d/1gDMcROqdYmK-Jxq-6HBT_3PSUs0LcioeHvq0ipQ6jXo/edit?usp=sharing" },
+        a: { type: "anchor", target: "алгоритмы" },
+        o: { type: "anchor", target: "основы-программирования" },
+        e: { type: "anchor", target: "архитектура-эвм" },
 
 
-        "м": { type: "anchor", target: "матан", url: "https://docs.google.com/spreadsheets/d/1p0obShDzJhaiLegIOJoWBs_j-evS7sed502BrUB79KY/edit?gid=0#gid=0" }, // м
-        c: { type: "anchor", target: "спецразделы-высшей-математики", url: "https://docs.google.com/spreadsheets/d/14rIVWggg_t8WSs1KiCkotNIL1hQZ7-F_VRpMttsP4bw/edit?gid=0#gid=0" }, // с
-        l: { type: "anchor", target: "дискретная-математика" }, // д
-        f: { type: "anchor", target: "алгоритмы", url: "https://docs.google.com/spreadsheets/d/1DwOhN0JpuUK3i0Zg4rag6J_vBQYGrzjdNWJ20UCTuI8/edit?gid=1919380163#gid=1919380163&range=A100" }, // а
-        j: { type: "anchor", target: "основы-программирования", url: "https://docs.google.com/spreadsheets/d/1N8QIKIlwHgSR04MoIb5hCiRmkl2qVq6uWO1BkyICapM/edit?gid=1481585521#gid=1481585521" }, // о
-        ",": { type: "anchor", target: "архитектура-эвм", url: "https://docs.google.com/spreadsheets/d/1gDMcROqdYmK-Jxq-6HBT_3PSUs0LcioeHvq0ipQ6jXo/edit?usp=sharing" }, // э - эвм
+        "м": { type: "anchor", target: "матан", },
+        c: { type: "anchor", target: "спецразделы-высшей-математики" },
+        l: { type: "anchor", target: "дискретная-математика" },
+        f: { type: "anchor", target: "алгоритмы" },
+        j: { type: "anchor", target: "основы-программирования" },
+        ",": { type: "anchor", target: "архитектура-эвм" },
 
         // URL shortcuts
         b: { type: "url", target: "javascript:history.back()" },
@@ -30,9 +35,9 @@ const AnchorShortcuts = () => {
         g: { type: "url", target: "/point-distribution" }, // п - правила оценивания
 
         // service shortcuts
-        1: { type: "url", target: "https://github.com/nawinds/m3104-links/edit/master/src/pages/index.mdx" },
-        2: { type: "url", target: "https://github.com/nawinds/m3104-links/edit/master/static/api-deadlines" },
-        3: { type: "url", target: "https://github.com/nawinds/m3104-links/edit/master/src/pages/lecture-recordings.mdx" },
+        1: { type: "ext-url", target: `https://github.com/${organizationName}/${repoName}/edit/master/src/pages/index.mdx` },
+        2: { type: "ext-url", target: `https://github.com/${organizationName}/${repoName}/edit/master/static/api-deadlines` },
+        3: { type: "ext-url", target: `https://github.com/${organizationName}/${repoName}/edit/master/src/pages/lecture-recordings.mdx` }, // page doesn't exist yet
     };
 
     const russianKeyboardMap = {
@@ -103,9 +108,7 @@ const AnchorShortcuts = () => {
 
             if (action) {
                 if (action.type === "anchor") {
-                    if (location.pathname === "/table-grades") {
-                        window.open(action.url, "_blank"); // Open link in a new tab
-                    } else {
+                    if (location.pathname !== "/table-grades") {
                         const anchorElement = document.getElementById(action.target);
                         if (anchorElement) {
                             anchorElement.scrollIntoView({behavior: "instant", block: "start"});
@@ -118,6 +121,8 @@ const AnchorShortcuts = () => {
                     // }
                 } else if (action.type === "url") {
                     window.location.href = action.target; // Redirect to URL in the same tab
+                } else if (action.type === "ext-url") {
+                    window.open(action.target, "_blank");
                 }
             }
         };
