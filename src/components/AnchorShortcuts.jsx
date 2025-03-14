@@ -36,7 +36,7 @@ const AnchorShortcuts = () => {
 
         // service shortcuts
         1: { type: "ext-url", target: `https://github.com/${organizationName}/${repoName}/edit/master/src/pages/index.mdx` },
-        2: { type: "ext-url", target: `https://github.com/${organizationName}/${repoName}/edit/master/static/api-deadlines` },
+        2: { type: "ext-url", target: `https://github.com/${organizationName}/${repoName}/edit/master/static/DEADLINES.json` },
         3: { type: "ext-url", target: `https://github.com/${organizationName}/${repoName}/edit/master/src/pages/lecture-recordings.mdx` }, // page doesn't exist yet
     };
 
