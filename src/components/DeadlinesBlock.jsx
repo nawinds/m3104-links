@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const DEADLINES_URL = "/api-deadlines";
+const DEADLINES_URL = "/DEADLINES.json";
 
 const fetchDeadlines = async () => {
     const response = await fetch(DEADLINES_URL);

@@ -1,10 +1,10 @@
 import React from 'react';
 import OriginalLayout from '@theme-original/Layout';
-import SnowflakesBackground from '../../components/SnowflakesBackground';
-import AnchorShortcuts from "../../components/AnchorShortcuts";
-import HelpPopup from '../../components/HelpPopup';
-import ThemeColorMeta from '../../components/ThemeColorMeta';
-import SwipeableMenu from '../../components/SwipeableMenu';
+import SnowflakesBackground from '@site/src/components/SnowflakesBackground';
+import AnchorShortcuts from "@site/src/components/AnchorShortcuts";
+import HelpPopup from '@site/src/components/HelpPopup';
+import ThemeColorMeta from '@site/src/components/ThemeColorMeta';
+import SwipeableMenu from '@site/src/components/SwipeableMenu';
 
 function newYearTime() {
 
