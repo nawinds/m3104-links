@@ -79,5 +79,7 @@
       "name": "Архив: Семестр 1",
       "url": "/archive/semester/1"
     }
-  ]
+  ],
+  "lang": "ru",
+  "prefer_related_applications": false
 }

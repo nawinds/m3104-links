@@ -17,7 +17,6 @@ const GradesTableLink = ({ title, url, shortcutKeys }) => {
             window.removeEventListener("keydown", handleKeyDown);
         };
     }, [shortcutKeys, url]);
-    console.log(shortcutKeys);
 
     return (
         <h2>

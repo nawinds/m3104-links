@@ -5,7 +5,7 @@ const Ads = () => {
         <a href="https://private-net.work" target="_blank" rel="noopener noreferrer" style={{color: "inherit"}}>
             <div style={{
                 borderRadius: "7px",
-                border: "solid 1px rgba(255, 255, 255, 0.4)",
+                border: "solid 1px rgb(200, 200, 200)",
                 padding: "12px",
                 opacity: "0.8",
                 borderStyle: "dashed"
