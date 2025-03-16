@@ -1,58 +1,55 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import "@site/src/css/popup.css"; // Styles for the popup
 
-const AppInstall = () => {
+const AppInstallPopup = () => {
+    const [isVisible, setIsVisible] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
     const installPrompt = useRef(null);
-    const installButton = useRef(null);
 
+    // Check if the device is mobile
+    useEffect(() => {
+        const userAgent = navigator.userAgent.toLowerCase();
+        const isMobileDevice = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+        setIsMobile(isMobileDevice);
+    }, []);
+
+    // Handle the beforeinstallprompt event
     useEffect(() => {
         const handleBeforeInstallPrompt = (event) => {
             event.preventDefault();
             installPrompt.current = event;
-            if (installButton.current) {
-                installButton.current.removeAttribute("hidden");
+            if (isMobile) {
+                setIsVisible(true); // Show the popup on mobile devices
             }
-        };
-
-        const handleInstallButtonClick = async () => {
-            if (!installPrompt.current) {
-                return;
-            }
-            const result = await installPrompt.current.prompt();
-            console.log(`Install prompt was: ${result.outcome}`);
-            disableInAppInstallPrompt();
-        };
-
-        const disableInAppInstallPrompt = () => {
-            installPrompt.current = null;
-            if (installButton.current) {
-                installButton.current.setAttribute("hidden", "");
-            }
-        };
-
-        const handleAppInstalled = () => {
-            disableInAppInstallPrompt();
         };
 
         window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
-        if (installButton.current) {
-            installButton.current.addEventListener("click", handleInstallButtonClick);
-        }
-        window.addEventListener("appinstalled", handleAppInstalled);
 
         return () => {
             window.removeEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
-            if (installButton.current) {
-                installButton.current.removeEventListener("click", handleInstallButtonClick);
-            }
-            window.removeEventListener("appinstalled", handleAppInstalled);
         };
-    }, []);
+    }, [isMobile]);
+
+    // Handle the install button click
+    const handleInstallClick = async () => {
+        if (!installPrompt.current) return;
+        const result = await installPrompt.current.prompt();
+        console.log(`Install prompt was: ${result.outcome}`);
+        setIsVisible(false); // Hide the popup after the prompt
+    };
+
+    if (!isVisible) return null; // Don't render the popup if it's not visible
 
     return (
-        <button id="install" ref={installButton} hidden>
-            Install App
-        </button>
+        <div className="popup-container2">
+            <div className="popup-content2">
+                <p>Установите сайт как веб-приложение на телефон для быстрого доступа к ссылкам!</p>
+                <button className="install-button2" onClick={handleInstallClick}>
+                    Установить
+                </button>
+            </div>
+        </div>
     );
 };
 
-export default AppInstall;
+export default AppInstallPopup;

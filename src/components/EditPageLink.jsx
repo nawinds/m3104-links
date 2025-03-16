@@ -29,7 +29,7 @@ const EditPageLink = ({filePath, linkText = 'Редактировать стра
                     width: '16px',
                     height: '16px',
                     marginRight: '4px',
-                    color: "white"
+                    color: "inherit"
                 }}/>
                 {linkText}
             </a>

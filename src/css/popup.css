@@ -1,0 +1,25 @@
+.popup-container2 {
+    border: solid 1px var(--ifm-color-primary-darkest);
+    border-radius: 8px;
+    padding: 23px 20px 30px;
+    margin-top: 25px;
+}
+
+.popup-content2 {
+    align-items: center;
+}
+
+.install-button2 {
+    background: transparent;
+    color: var(--ifm-color-primary);
+    border: solid 1px var(--ifm-color-primary);
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.install-button2:hover {
+    background-color: var(--ifm-color-primary);
+    color: white;
+}
