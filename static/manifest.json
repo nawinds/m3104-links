@@ -1,6 +1,13 @@
 {
   "name": "Ссылки M3104",
   "short_name": "M3104",
+  "description": "Быстрый доступ к учебным материалам, актуальным дедлайнам и оценкам.",
+  "categories": [
+    "education",
+    "productivity",
+    "social"
+  ],
+  "orientation": "natural",
   "theme_color": "#3d1a55",
   "background_color": "#17111c",
   "display": "standalone",
@@ -25,16 +32,52 @@
   ],
   "screenshots": [
     {
-      "src": "/img/screenshot_desktop.png",
-      "sizes": "1280x639",
+      "src": "/img/screenshot_desktop_light.png",
       "type": "image/png",
-      "form_factor": "wide"
+      "form_factor": "wide",
+      "label": "Home screen"
+    },
+    {
+      "src": "/img/screenshot_desktop.png",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Dark theme"
+    },
+    {
+      "src": "/img/screenshot_mobile_light.jpg",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Home screen"
     },
     {
       "src": "/img/screenshot_mobile.jpg",
-      "sizes": "649x1280",
-      "type": "image/png",
-      "form_factor": "narrow"
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Dark theme"
+    },
+    {
+      "src": "/img/screenshot_mobile2.jpg",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Menu"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Ведомости",
+      "url": "/table-grades"
+    },
+    {
+      "name": "Правила оценивания",
+      "url": "/point-distribution"
+    },
+    {
+      "name": "Лекции",
+      "url": "https://t.me/+_GAv-z_aZplhYmEy"
+    },
+    {
+      "name": "Архив: Семестр 1",
+      "url": "/parchive/semester/1"
     }
   ]
 }
