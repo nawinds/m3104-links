@@ -8,9 +8,8 @@ const AppInstallPopup = () => {
 
     // Check if the device is mobile
     useEffect(() => {
-        const userAgent = navigator.userAgent.toLowerCase();
-        const isMobileDevice = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
-        setIsMobile(isMobileDevice);
+        const isSmallScreen = window.innerWidth <= 768;
+        setIsMobile(isSmallScreen);
     }, []);
 
     // Handle the beforeinstallprompt event
