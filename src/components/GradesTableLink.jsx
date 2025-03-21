@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import OpenIcon from '@site/static/img/top-right-arrow-icon.svg';
+import OpenIcon from '@site/src/components/OpenIcon';
 
 const GradesTableLink = ({ title, url, shortcutKeys }) => {
     useEffect(() => {
@@ -21,7 +21,7 @@ const GradesTableLink = ({ title, url, shortcutKeys }) => {
     return (
         <h2>
             <a href={url} target="_blank" rel="noopener noreferrer">
-                <OpenIcon style={{ verticalAlign: 'middle', width: '17px', height: '17px', color: 'white', marginRight: '4px' }} />
+                <OpenIcon marginRight={5} />
                 {title}
             </a>
         </h2>
