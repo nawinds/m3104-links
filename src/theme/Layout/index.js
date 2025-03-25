@@ -51,7 +51,7 @@ function preloaderNeeded() {
 }
 
 export default function Layout(props) {
-    if (preloaderNeeded()) {return (<Preloader/>)}
+    // if (preloaderNeeded()) {return (<Preloader>{props.children}</Preloader>)}
 
 
     if (newYearTime()) {
