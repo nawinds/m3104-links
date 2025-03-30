@@ -224,6 +224,9 @@ const config = {
             },
         ],
     ],
+    customFields: {
+        licenseKey: process.env.LICENSE_KEY,
+    },
 };
 
 export default config;
