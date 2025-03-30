@@ -9,6 +9,8 @@ jobs:
   test-deploy:
     name: Test deployment
     runs-on: ubuntu-latest
+    env:
+      LICENSE_KEY: ${{ secrets.LICENSE_KEY }}
     steps:
       - uses: actions/checkout@v4
         with:

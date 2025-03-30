@@ -11,6 +11,8 @@ jobs:
   build:
     name: Build Docusaurus
     runs-on: ubuntu-latest
+    env:
+      LICENSE_KEY: ${{ secrets.LICENSE_KEY }}
     steps:
       - uses: actions/checkout@v4
         with:
