@@ -185,6 +185,9 @@ If you are using GitHub Pages for hosting, this command is a convenient way to b
 
 Переключение темы поддерживается на всех версиях сайта.
 
+### Генерация лицензионного ключа
+Чтобы активировать сайт, размещенный на GitHub Pages, необходимо использовать актуальный лицензионный ключ. О том, как его сгенерировать, можно прочитать в [этом приватном репозитории](https://github.com/nawinds/m3104-links-license-generator). Всем, у кого нет к нему доступа, нужно обратиться ко [мне](https://t.me/nawinds) для активации сайта.
+
 ## Поддержать проект
 
 Поддержите проект, сделав **[перевод на Т-Банк](https://www.tbank.ru/cf/4tI8tyioxMb)** или став моим спонсором на **[GitHub Sponsors](https://github.com/sponsors/nawinds)**!
