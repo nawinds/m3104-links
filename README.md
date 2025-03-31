@@ -190,6 +190,6 @@ If you are using GitHub Pages for hosting, this command is a convenient way to b
 
 ## Поддержать проект
 
-Поддержите проект, сделав **[перевод на Т-Банк](https://www.tbank.ru/cf/4tI8tyioxMb)** или став моим спонсором на **[GitHub Sponsors](https://github.com/sponsors/nawinds)**!
+Поддержите проект, сделав **[перевод на Т-Банк](https://www.tbank.ru/cf/3AbJDkT6VIA)** или став моим спонсором на **[GitHub Sponsors](https://github.com/sponsors/nawinds)**!
 
 Собранные средства мотивируют развивать сайт, добавлять новые фичи, а также подумать над созданием других полезных сервисов в рамках ИТМО.
