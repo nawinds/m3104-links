@@ -172,7 +172,7 @@ const config = {
                             },
                             {
                                 label: 'Задонатить',
-                                href: 'https://www.tbank.ru/cf/4tI8tyioxMb',
+                                href: 'https://www.tbank.ru/cf/3AbJDkT6VIA',
                             },
                             {
                                 html: '<a href="#" data-help-popup="">Горячие клавиши</a>',
