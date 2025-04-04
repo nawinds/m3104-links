@@ -16,7 +16,6 @@ const AnchorShortcuts = () => {
         o: { type: "anchor", target: "основы-программирования" },
         e: { type: "anchor", target: "архитектура-эвм" },
 
-
         "м": { type: "anchor", target: "матан", },
         c: { type: "anchor", target: "спецразделы-высшей-математики" },
         l: { type: "anchor", target: "дискретная-математика" },
@@ -103,10 +102,16 @@ const AnchorShortcuts = () => {
 
     useEffect(() => {
         const handleKeyDown = (event) => {
+            if (event.ctrlKey || event.altKey || event.metaKey || event.shiftKey) {
+                return;
+            }
+
             const pressedKey = event.key.toLowerCase();
             const action = keyToActionMap[pressedKey];
 
             if (action) {
+                event.preventDefault();
+
                 if (action.type === "anchor") {
                     if (location.pathname !== "/table-grades") {
                         const anchorElement = document.getElementById(action.target);
@@ -114,13 +119,13 @@ const AnchorShortcuts = () => {
                             anchorElement.scrollIntoView({behavior: "instant", block: "start"});
                         }
                     }
-
-                    // const anchorElement = document.getElementById(action.target);
-                    // if (anchorElement) {
-                    //     smoothScrollTo(anchorElement, 200, 60); // Adjust offset if needed
-                    // }
                 } else if (action.type === "url") {
-                    window.location.href = action.target; // Redirect to URL in the same tab
+                    if (action.target.startsWith("javascript:")) {
+                        // Execute JS directly for history.back()
+                        window.location = action.target;
+                    } else {
+                        window.location.href = action.target;
+                    }
                 } else if (action.type === "ext-url") {
                     window.open(action.target, "_blank");
                 }
