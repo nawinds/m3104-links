@@ -50,12 +50,12 @@ const formatDeadline = (deadline) => {
 
     let text = "";
     if (link) {
-        text += `<b style="padding-left: 5px; border-left: 2px solid rgba(157,128,218,0.5); ackground: rgba(157,128,218,0.3);"><a href=\"${link}\" target=\"_blank\" style=\"text-decoration: none; color: inherit;\" onmouseover=\"this.style.opacity='0.8'\" onmouseout=\"this.style.opacity='1'\">${deadlineName}</a></b>`;
+        text += `<b style="padding-left: 5px; border-left: 2px solid rgba(157,128,218,0.5);"><a href="${link}" target="_blank" title="Открыть ${deadlineName}" style="text-decoration: none; color: inherit;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">${deadlineName}</a></b>`;
     } else {
         text += `<b style="padding-left: 8px;">${deadlineName}</b>`;
     }
 
-    text += ` &#8212; <a href="${gcalLink}" target="_blank" style="text-decoration: none; color: inherit;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">`;
+    text += ` &#8212; <a href="${gcalLink}" target="_blank" title="Добавить в Google Календарь" style="text-decoration: none; color: inherit;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">`;
 
     if (deltaDays < 1) {
         text += `${Math.floor(deltaHoursSDays)}ч ${Math.floor(deltaMinutesSDays)}м`;
