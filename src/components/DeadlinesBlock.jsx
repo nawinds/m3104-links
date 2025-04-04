@@ -32,7 +32,12 @@ const formatUnixTimeIntoGCalTime = (unixTimeDeadline) => {
 
 const formatDeadline = (deadline) => {
     const {siteConfig} = useDocusaurusContext();
-    const ym_counter = siteConfig.ymCounter;
+    const ym_counter = siteConfig.customFields.ymCounter;
+
+    // A/B experiment
+    const location = useLocation();
+    const searchParams = new URLSearchParams(location.search);
+    const deadlineStyle = searchParams.get('deadlineStyle');
 
     const unixTimeDeadline = Date.parse(deadline.time);
     const unixTimeNow = Date.now();
@@ -54,8 +59,14 @@ const formatDeadline = (deadline) => {
 
     let text = "";
     if (link) {
-        text += `<b style="position: relative; display: inline-block;"><a href="${link}" target="_blank" title="Открыть ${deadlineName}" style="text-decoration: none; color: inherit; position: relative; z-index: 1;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'" onclick="ym(${ym_counter}, 'reachGoal', 'deadline_click'); return true;">${deadlineName}</a>
+        // A/B experiment
+        if (deadlineStyle === "new") {
+            text += `<b style="position: relative; display: inline-block;"><a href="${link}" target="_blank" title="Открыть ${deadlineName}" style="text-decoration: none; color: inherit; position: relative; z-index: 1;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'" onclick="ym(${ym_counter}, 'reachGoal', 'deadline_click'); return true;">${deadlineName}</a>
                  <span style="position: absolute; bottom: 2px; left: 0; right: 0; height: 1px; background: rgba(157,128,218,0.5); z-index: 0;"></span></b>`;
+
+        } else {
+            text += `<b style="padding-left: 5px; border-left: 2px solid rgba(157,128,218,0.5);"><a href=\"${link}\" target=\"_blank\" style=\"text-decoration: none; color: inherit;\" onmouseover=\"this.style.opacity='0.8'\" onmouseout=\"this.style.opacity='1'\" onclick="ym(${ym_counter}, 'reachGoal', 'deadline_click'); return true;">${deadlineName}</a></b>`;
+        }
     } else {
         text += `<b>${deadlineName}</b>`;
     }

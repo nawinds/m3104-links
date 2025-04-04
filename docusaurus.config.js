@@ -23,7 +23,6 @@ const config = {
     // If you aren't using GitHub pages, you don't need these.
     organizationName: 'nawinds', // Usually your GitHub org/user name.
     projectName: 'm3104-links', // Usually your repo name.
-    ymCounter: '98560217',
 
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
@@ -227,6 +226,7 @@ const config = {
     ],
     customFields: {
         licenseKey: process.env.LICENSE_KEY,
+        ymCounter: '98560217',
     },
 };
 

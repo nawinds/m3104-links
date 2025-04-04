@@ -33,7 +33,7 @@ const AppInstallPopup = () => {
     // Handle the install button click
     const handleInstallClick = async () => {
         const {siteConfig} = useDocusaurusContext();
-        const ym_counter = siteConfig.ymCounter;
+        const ym_counter = siteConfig.customFields.ymCounter;
 
         if (!installPrompt.current) return;
         const result = await installPrompt.current.prompt();

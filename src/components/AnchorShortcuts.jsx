@@ -6,7 +6,7 @@ const AnchorShortcuts = () => {
     const {siteConfig} = useDocusaurusContext();
     const organizationName = siteConfig.organizationName;
     const repoName = siteConfig.projectName;
-    const ym_counter = siteConfig.ymCounter;
+    const ym_counter = siteConfig.customFields.ymCounter;
 
     const keyToActionMap = {
         // Anchor shortcuts
