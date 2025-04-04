@@ -6,6 +6,7 @@ const AnchorShortcuts = () => {
     const {siteConfig} = useDocusaurusContext();
     const organizationName = siteConfig.organizationName;
     const repoName = siteConfig.projectName;
+    const ym_counter = siteConfig.ymCounter;
 
     const keyToActionMap = {
         // Anchor shortcuts
@@ -129,6 +130,8 @@ const AnchorShortcuts = () => {
                 } else if (action.type === "ext-url") {
                     window.open(action.target, "_blank");
                 }
+
+                ym(ym_counter, 'reachGoal', 'hotkey');
             }
         };
 

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 const DEADLINES_URL = "/DEADLINES.json";
 
@@ -30,6 +31,9 @@ const formatUnixTimeIntoGCalTime = (unixTimeDeadline) => {
 };
 
 const formatDeadline = (deadline) => {
+    const {siteConfig} = useDocusaurusContext();
+    const ym_counter = siteConfig.ymCounter;
+
     const unixTimeDeadline = Date.parse(deadline.time);
     const unixTimeNow = Date.now();
     if (unixTimeDeadline <= unixTimeNow) return null;
@@ -50,12 +54,13 @@ const formatDeadline = (deadline) => {
 
     let text = "";
     if (link) {
-        text += `<b style="padding-left: 5px; border-left: 2px solid rgba(157,128,218,0.5);"><a href="${link}" target="_blank" title="Открыть ${deadlineName}" style="text-decoration: none; color: inherit;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">${deadlineName}</a></b>`;
+        text += `<b style="position: relative; display: inline-block;"><a href="${link}" target="_blank" title="Открыть ${deadlineName}" style="text-decoration: none; color: inherit; position: relative; z-index: 1;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'" onclick="ym(${ym_counter}, 'reachGoal', 'deadline_click'); return true;">${deadlineName}</a>
+                 <span style="position: absolute; bottom: 2px; left: 0; right: 0; height: 1px; background: rgba(157,128,218,0.5); z-index: 0;"></span></b>`;
     } else {
-        text += `<b style="padding-left: 8px;">${deadlineName}</b>`;
+        text += `<b>${deadlineName}</b>`;
     }
 
-    text += ` &#8212; <a href="${gcalLink}" target="_blank" title="Добавить в Google Календарь" style="text-decoration: none; color: inherit;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">`;
+    text += ` &#8212; <a href="${gcalLink}" target="_blank" title="Добавить в Google Календарь" style="text-decoration: none; color: inherit;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'" onclick="ym(${ym_counter}, 'reachGoal', 'deadline_time_click'); return true;">`;
 
     if (deltaDays < 1) {
         text += `${Math.floor(deltaHoursSDays)}ч ${Math.floor(deltaMinutesSDays)}м`;

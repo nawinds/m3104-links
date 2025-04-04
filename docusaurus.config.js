@@ -23,6 +23,7 @@ const config = {
     // If you aren't using GitHub pages, you don't need these.
     organizationName: 'nawinds', // Usually your GitHub org/user name.
     projectName: 'm3104-links', // Usually your repo name.
+    ymCounter: '98560217',
 
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
@@ -175,7 +176,7 @@ const config = {
                                 href: 'https://www.tbank.ru/cf/3AbJDkT6VIA',
                             },
                             {
-                                html: '<a href="#" data-help-popup="">Горячие клавиши</a>',
+                                html: '<a href="#" data-help-popup="" onclick="ym(98560217, \'reachGoal\', \'footer_hotkeys_reference\'); return true;">Горячие клавиши</a>',
                             },
                         ],
                     },

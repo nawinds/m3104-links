@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import "@site/src/css/popup.css"; // Styles for the popup
+import "@site/src/css/popup.css";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext"; // Styles for the popup
 
 const AppInstallPopup = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -31,10 +32,14 @@ const AppInstallPopup = () => {
 
     // Handle the install button click
     const handleInstallClick = async () => {
+        const {siteConfig} = useDocusaurusContext();
+        const ym_counter = siteConfig.ymCounter;
+
         if (!installPrompt.current) return;
         const result = await installPrompt.current.prompt();
         console.log(`Install prompt was: ${result.outcome}`);
         setIsVisible(false); // Hide the popup after the prompt
+        ym(ym_counter,'reachGoal','pwa_install');
     };
 
     if (!isVisible) return null; // Don't render the popup if it's not visible
