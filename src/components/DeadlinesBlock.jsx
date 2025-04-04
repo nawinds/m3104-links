@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import {useLocation} from "@docusaurus/router";
 
 const DEADLINES_URL = "/DEADLINES.json";
 
