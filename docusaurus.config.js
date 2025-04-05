@@ -116,6 +116,18 @@ const config = {
                             }
                         ],
                     },
+                    {
+                        type: 'html',
+                        position: 'right',
+                        value: '<div style="margin-left: 10px"' +
+                            '<script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="m3104_deadliner_bot" data-size="medium" data-onauth="onTelegramAuth(user)"></script>' +
+                            '<script type="text/javascript">' +
+                            'function onTelegramAuth(user) {' +
+                            'alert(\'Logged in as \' + user.first_name + \' \' + user.last_name + \' (\' + user.id + (user.username ? \', @\' + user.username : \'\') + \')\');' +
+                            '}' +
+                            '</script>' +
+                            '</div>',
+                    },
                     // {
                     //     type: 'html',
                     //     position: 'right',
@@ -186,7 +198,13 @@ const config = {
                 darkTheme: prismThemes.dracula,
             },
         }),
-    scripts: ['/ya_metrika.js'],
+    scripts: [
+        '/ya_metrika.js',
+        {
+            src: "https://telegram.org/js/telegram-widget.js?22",
+            async: true,
+        },
+    ],
     plugins: [
         [
             '@docusaurus/plugin-pwa',
