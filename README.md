@@ -201,7 +201,7 @@ If you are using GitHub Pages for hosting, this command is a convenient way to b
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
 | ![ab_test_old_deadline_design.png.png](.github/docs/ab_test_old_deadline_design.png) | ![ab_test_new_deadline_design.png](.github/docs/ab_test_new_deadline_design.png) |
 
-Предварительно датой окончания тестирования является 11 апреля.
+11 апреля эксперимент был завершен, однако в связи с неоднозначными результатами повторный тест был запущен 16 апреля на двухнедельный срок (до 30 апреля).
 
 ## Поддержать проект
 
