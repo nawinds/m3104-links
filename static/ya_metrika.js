@@ -26,3 +26,26 @@ me=x.createElement(pe),me.async=1,me.src=r,nt=x.getElementsByTagName(pe)[0],me.a
 (window, document, 'script', 'https://abt.s3.yandex.net/expjs/latest/exp.js', 'ymab');
 ymab('metrika.98560217', 'init'/*, {clientFeatures}, {callback}*/);
 
+
+    (function (w) {
+        function start() {
+            w.removeEventListener("YaMarketAffiliateLoad", start);
+            w.YaMarketAffiliate.createWidget({type:"models",
+	containerId:"marketWidget",
+	fallback:true,
+	params:{clid:12691293,
+		buttonLinkType:"add_to_cart",
+		searchInStock:true,
+		searchLocalOffersFirst:true,
+		searchModelIds:[1926319328,
+			1908139836,
+			76517139,
+			58330238,
+			60863629 ],
+		themeId:1 } });
+        }
+        w.YaMarketAffiliate
+            ? start()
+            : w.addEventListener("YaMarketAffiliateLoad", start);
+    })(window);
+
