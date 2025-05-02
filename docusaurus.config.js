@@ -141,6 +141,10 @@ const config = {
                                 href: 'https://isu.ifmo.ru',
                             },
                             {
+                                label: 'Бронирование помещений',
+                                href: 'https://isu.ifmo.ru/pls/apex/f?p=2431:1:109766894768242',
+                            },
+                            {
                                 label: 'BARS',
                                 href: 'https://bars.itmo.ru',
                             },
