@@ -70,7 +70,7 @@ const formatDeadline = (deadline) => {
             text += `<b style="padding-left: 5px; border-left: 2px solid rgba(157,128,218,0.5);"><a href=\"${link}\" target=\"_blank\" style=\"text-decoration: none; color: inherit;\" onmouseover=\"this.style.opacity='0.8'\" onmouseout=\"this.style.opacity='1'\" onclick="ym(${ym_counter}, 'reachGoal', 'deadline_click'); return true;">${deadlineName}</a></b>`;
         }
     } else {
-        text += `<b>${deadlineName}</b>`;
+        text += `<b style="padding-left: 7px;">${deadlineName}</b>`;
     }
 
     text += ` &#8212; <a href="${gcalLink}" target="_blank" title="Добавить в Google Календарь" style="text-decoration: none; color: inherit;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'" onclick="ym(${ym_counter}, 'reachGoal', 'deadline_time_click'); return true;">`;
