@@ -1,6 +1,11 @@
 {
   "deadlines": [
     {
+      "name": "C++: Лабораторная 10. ITMOScript",
+      "time": "30 May 2025 23:59:59 GMT+3",
+      "url": "https://classroom.github.com/a/JwSdNObp"
+    },
+    {
       "name": "Алгосы: Лаба №12. Хеши",
       "time": "7 May 2025 23:59:59 GMT+3",
       "url": "https://sort-me.org/contest/306"
