@@ -67,7 +67,7 @@ const formatDeadline = (deadline) => {
                  <span style="position: absolute; bottom: 2px; left: 0; right: 0; height: 1px; background: rgba(157,128,218,0.6); z-index: 0; transition: height 0.1s ease;"></span></b>`;
 
         } else {
-            text += `<b style="padding-left: 5px; border-left: 2px solid rgba(157,128,218,0.5);"><a href=\"${link}\" target=\"_blank\" style=\"text-decoration: none; color: inherit;\" onmouseover=\"this.style.opacity='0.8'\" onmouseout=\"this.style.opacity='1'\" onclick="ym(${ym_counter}, 'reachGoal', 'deadline_click'); return true;">${deadlineName}</a></b>`;
+            text += `<b style="padding-left: 5px; border-left: 2px solid rgba(157,128,218,0.5);"><a href=\"${link}\" target=\"_blank\" title="Открыть ${deadlineName}" style=\"text-decoration: none; color: inherit;\" onmouseover=\"this.style.opacity='0.8'\" onmouseout=\"this.style.opacity='1'\" onclick="ym(${ym_counter}, 'reachGoal', 'deadline_click'); return true;">${deadlineName}</a></b>`;
         }
     } else {
         text += `<b style="padding-left: 7px;">${deadlineName}</b>`;
