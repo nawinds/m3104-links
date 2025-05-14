@@ -54,6 +54,7 @@ const formatDeadline = (deadline) => {
 
     let deadlineName = deadline.name.replace("[Тест]", "📚").replace("[тест]", "📚");
     deadlineName = deadlineName.replace("[Лекция]", "👨‍🏫").replace("[лекция]", "👨‍🏫");
+    deadlineName = deadlineName.replace("[Защита]", "🛡").replace("[защита]", "🛡");
     const formattedTime = formatUnixTimeIntoGCalTime(unixTimeDeadline);
     const description = "Дедлайн добавлен с сайта m3104.nawinds.dev";
     const link = deadline.url;
