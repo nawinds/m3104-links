@@ -141,7 +141,7 @@ const config = {
                                 href: 'https://isu.ifmo.ru',
                             },
                             {
-                                label: 'Бронирования,
+                                label: 'Бронирования',
                                 href: 'https://isu.ifmo.ru/pls/apex/f?p=2431:4',
                             },
                             {
